@@ -1,0 +1,1290 @@
+{
+  "parameters": {
+    "title": "教授Galgame",
+    "launch_story": "ch3_scene1",
+    "languares": [
+      "ja"
+    ],
+    "autosave": false,
+    "font": "Arial",
+    "font_size": "18px",
+    "text_panel": {
+      "size": [
+        "95%",
+        "25%"
+      ],
+      "color": "#efefff",
+      "color_text": "#000",
+      "indent_text": "8px",
+      "indent_bottom": "32px",
+      "size_text": "20px",
+      "style": "border-radius:16px;",
+      "dialog_speed": "10",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "font_family": "Arial",
+      "scroll": true
+    },
+    "name_panel": {
+      "size": [
+        "222px",
+        "48px"
+      ],
+      "position": [
+        "0",
+        "0",
+        "-48px",
+        "0"
+      ],
+      "indent_text": "8px",
+      "size_text": "18px",
+      "color_text": "#000",
+      "align": [
+        "flex-start",
+        "center"
+      ],
+      "font_family": "",
+      "color": ""
+    },
+    "buttons": [
+      {
+        "name": "tue_back",
+        "style": "border-radius:26px;",
+        "position": [
+          "2.5%",
+          "0",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＜"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      },
+      {
+        "name": "tue_next",
+        "style": "border-radius:26px;",
+        "position": [
+          "0",
+          "2.5%",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＞"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      }
+    ],
+    "variables": {
+      "favorability_oka": 0,
+      "favorability_arai": 0,
+      "favorability_goto": 0,
+      "route": 0
+    },
+    "characters": {
+      "char_hero": {
+        "ja": "主人公"
+      },
+      "char_takahashi": {
+        "ja": "高橋"
+      },
+      "char_oka": {
+        "ja": "岡教授"
+      },
+      "char_arai": {
+        "ja": "荒井教授"
+      },
+      "char_goto": {
+        "ja": "五島教授"
+      }
+    },
+    "sounds": {},
+    "cursors": {},
+    "font_files": {}
+  },
+  "blocks": {
+    "ch3_scene1": [
+      "100px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene2": [
+      "100px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene3": [
+      "100px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene3_try": [
+      "400px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene4": [
+      "100px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene5": [
+      "100px",
+      "900px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene6": [
+      "100px",
+      "1100px",
+      "block",
+      false
+    ],
+    "ch3_oka_scene7": [
+      "100px",
+      "1300px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene2": [
+      "500px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene3": [
+      "500px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene3_try": [
+      "800px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene4": [
+      "500px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene5": [
+      "500px",
+      "900px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene6": [
+      "500px",
+      "1100px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene6_help": [
+      "800px",
+      "1100px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene6_leave": [
+      "1100px",
+      "1100px",
+      "block",
+      false
+    ],
+    "ch3_arai_scene7": [
+      "500px",
+      "1300px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene2": [
+      "900px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene3": [
+      "900px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene3_try": [
+      "1200px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene4": [
+      "900px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene5": [
+      "900px",
+      "900px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene6": [
+      "900px",
+      "1100px",
+      "block",
+      false
+    ],
+    "ch3_goto_scene7": [
+      "900px",
+      "1300px",
+      "block",
+      false
+    ]
+  },
+  "ch3_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/掲示板.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究室配属の日。"
+          }
+        },
+        {
+          "text": {
+            "ja": "ついに研究室決めだな。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "緊張する…。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "（好感度が最も高い教授の研究室へ配属される。）"
+          }
+        },
+        {
+          "text": {
+            "ja": "***ルート確定***"
+          }
+        },
+        {
+          "js": "story_json.parameters.variables.route=(function(){var vals=[['oka',story_json.parameters.variables.favorability_oka],['arai',story_json.parameters.variables.favorability_arai],['goto',story_json.parameters.variables.favorability_goto]];vals.sort(function(a,b){return b[1]-a[1];});var top=vals[0][0];return (top=='goto')?2:((top=='arai')?1:0);})();"
+        },
+        {
+          "legacy_choice": [
+            [
+              "route",
+              ">",
+              1,
+              "ch3_goto_scene2"
+            ],
+            [
+              "route",
+              ">",
+              0,
+              "ch3_arai_scene2"
+            ],
+            [
+              "route",
+              ">",
+              -1,
+              "ch3_oka_scene2"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "今日からよろしく。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "よろしくお願いします。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "（先生と過ごす時間が増えるんだな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_oka_scene3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究が思うように進まない。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで頑張る"
+              },
+              "go_to": "ch3_oka_scene3_try"
+            },
+            {
+              "text": {
+                "ja": "今日は帰る"
+              },
+              "go_to": "ch3_oka_scene4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene3_try": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "その姿勢は評価している。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_oka_scene4",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene4": [
+    {
+      "background_image": {
+        "src": "data/bg/大学.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究室に主人公と教授だけが残っている。"
+          }
+        },
+        {
+          "text": {
+            "ja": "休憩しよう。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "二人で飲み物を飲む。"
+          }
+        },
+        {
+          "text": {
+            "ja": "（先生と二人きり…少し緊張する。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_oka_scene5",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene5": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "発表資料を一緒に作る。"
+          }
+        },
+        {
+          "text": {
+            "ja": "君がいて助かった。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "先生の役に立てて嬉しいです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_oka_scene6",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene6": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究室展示を二人で準備する。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで手伝う"
+              },
+              "go_to": "ch3_oka_scene7",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "ゲームしたいので途中で帰る"
+              },
+              "go_to": "ch3_oka_scene7",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  -5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_oka_scene7": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "（先生と過ごす時間が増えてから…なんだか毎日が楽しい。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（４年生編へ）"
+              },
+              "go_to": "ch4_oka_scene1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "今日からよろしくな！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "よろしくお願いします！"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "困ったことがあったら何でも相談しろ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（やっぱり頼りになる先生だ。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/実験室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "実験が思うように進まない。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで挑戦する"
+              },
+              "go_to": "ch3_arai_scene3_try"
+            },
+            {
+              "text": {
+                "ja": "諦めて帰る"
+              },
+              "go_to": "ch3_arai_scene4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene3_try": [
+    {
+      "background_image": {
+        "src": "data/bg/実験室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "その粘り強さ、大事だぞ！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene4",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene4": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "暑いな！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "冷たい飲み物を差し入れてくれる。"
+          }
+        },
+        {
+          "text": {
+            "ja": "ありがとうございます。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "熱中症には気を付けろよ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（こういう優しさが嬉しいな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene5",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene5": [
+    {
+      "background_image": {
+        "src": "data/bg/大学.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "高校生向けイベントを一緒に手伝う。"
+          }
+        },
+        {
+          "text": {
+            "ja": "君は説明が上手だな！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "先生のおかげです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene6",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene6": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "展示の準備をする。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで手伝う"
+              },
+              "go_to": "ch3_arai_scene6_help"
+            },
+            {
+              "text": {
+                "ja": "ゲームしたいので途中で帰る"
+              },
+              "go_to": "ch3_arai_scene6_leave"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene6_help": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "本当に助かった！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene7",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene6_leave": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "残念だな…。"
+          },
+          "name": "char_arai"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_arai_scene7",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  -5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_arai_scene7": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "（先生の笑顔を見ると元気が出る。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（４年生編へ）"
+              },
+              "go_to": "ch4_arai_scene1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "……よろしく。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "よろしくお願いします。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "（先生と過ごす時間が増えるんだな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_goto_scene3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究が思うように進まない。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで頑張る"
+              },
+              "go_to": "ch3_goto_scene3_try"
+            },
+            {
+              "text": {
+                "ja": "今日は帰る"
+              },
+              "go_to": "ch3_goto_scene4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene3_try": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "……悪くない。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_goto_scene4",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene4": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究室に主人公と教授だけが残っている。"
+          }
+        },
+        {
+          "text": {
+            "ja": "……休憩しよう。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "二人でコーヒーを飲む。"
+          }
+        },
+        {
+          "text": {
+            "ja": "（先生と二人きり…少し緊張する。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_goto_scene5",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene5": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "発表資料を一緒に作る。"
+          }
+        },
+        {
+          "text": {
+            "ja": "助かった。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "先生の役に立てて嬉しいです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch3_goto_scene6",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene6": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究室展示を二人で準備する。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "最後まで手伝う"
+              },
+              "go_to": "ch3_goto_scene7",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  2
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "ゲームしたいので途中で帰る"
+              },
+              "go_to": "ch3_goto_scene7",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  -5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch3_goto_scene7": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "（もっと先生のことを知りたい。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（４年生編へ）"
+              },
+              "go_to": "ch4_goto_scene1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

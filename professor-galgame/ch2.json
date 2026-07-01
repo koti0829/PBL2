@@ -1,0 +1,660 @@
+{
+  "parameters": {
+    "title": "教授Galgame",
+    "launch_story": "ch2_scene1",
+    "languares": [
+      "ja"
+    ],
+    "autosave": false,
+    "font": "Arial",
+    "font_size": "18px",
+    "text_panel": {
+      "size": [
+        "95%",
+        "25%"
+      ],
+      "color": "#efefff",
+      "color_text": "#000",
+      "indent_text": "8px",
+      "indent_bottom": "32px",
+      "size_text": "20px",
+      "style": "border-radius:16px;",
+      "dialog_speed": "10",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "font_family": "Arial",
+      "scroll": true
+    },
+    "name_panel": {
+      "size": [
+        "222px",
+        "48px"
+      ],
+      "position": [
+        "0",
+        "0",
+        "-48px",
+        "0"
+      ],
+      "indent_text": "8px",
+      "size_text": "18px",
+      "color_text": "#000",
+      "align": [
+        "flex-start",
+        "center"
+      ],
+      "font_family": "",
+      "color": ""
+    },
+    "buttons": [
+      {
+        "name": "tue_back",
+        "style": "border-radius:26px;",
+        "position": [
+          "2.5%",
+          "0",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＜"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      },
+      {
+        "name": "tue_next",
+        "style": "border-radius:26px;",
+        "position": [
+          "0",
+          "2.5%",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＞"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      }
+    ],
+    "variables": {
+      "favorability_oka": 0,
+      "favorability_arai": 0,
+      "favorability_goto": 0,
+      "route": 0
+    },
+    "characters": {
+      "char_hero": {
+        "ja": "主人公"
+      },
+      "char_takahashi": {
+        "ja": "高橋"
+      },
+      "char_oka": {
+        "ja": "岡教授"
+      },
+      "char_arai": {
+        "ja": "荒井教授"
+      },
+      "char_goto": {
+        "ja": "五島教授"
+      }
+    },
+    "sounds": {},
+    "cursors": {},
+    "font_files": {}
+  },
+  "blocks": {
+    "ch2_scene1": [
+      "100px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch2_scene2": [
+      "100px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch2_scene2_greet": [
+      "400px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch2_scene3": [
+      "100px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch2_scene3_carry": [
+      "400px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch2_scene3_bow": [
+      "700px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch2_scene4": [
+      "100px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch2_scene5": [
+      "100px",
+      "900px",
+      "block",
+      false
+    ],
+    "ch2_scene6": [
+      "100px",
+      "1100px",
+      "block",
+      false
+    ]
+  },
+  "ch2_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/キャンパス.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "４月"
+          }
+        },
+        {
+          "text": {
+            "ja": "もう２年生か。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "今年は専門科目が増えるな。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "そういえば五島教授の授業あるらしいぞ。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "どんな？"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "すごい人って有名らしい。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch2_scene2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "教室のドアが静かに開く。"
+          }
+        },
+        {
+          "text": {
+            "ja": "……おはようございます。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "教室が静まり返る。"
+          }
+        },
+        {
+          "text": {
+            "ja": "担当する五島です。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "（なんだか独特な雰囲気だ。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "授業終了後。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "挨拶する"
+              },
+              "go_to": "ch2_scene2_greet"
+            },
+            {
+              "text": {
+                "ja": "そのまま帰る"
+              },
+              "go_to": "ch2_scene3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene2_greet": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "ありがとうございました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "……こちらこそ。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch2_scene3",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/研究棟前.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "この建物初めて来たな。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "偶然、五島教授と会う。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "荷物を持つ"
+              },
+              "go_to": "ch2_scene3_carry"
+            },
+            {
+              "text": {
+                "ja": "会釈だけする"
+              },
+              "go_to": "ch2_scene3_bow"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene3_carry": [
+    {
+      "background_image": {
+        "src": "data/bg/研究棟前.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "ありがとう。助かる。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch2_scene4",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene3_bow": [
+    {
+      "background_image": {
+        "src": "data/bg/研究棟前.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "こんにちは。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch2_scene4",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene4": [
+    {
+      "background_image": {
+        "src": "data/bg/図書館.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "レポート作成中。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "岡教授おすすめの本を借りる"
+              },
+              "go_to": "ch2_scene5",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "荒井教授おすすめの本を借りる"
+              },
+              "go_to": "ch2_scene5",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  2
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "五島教授おすすめの本を借りる"
+              },
+              "go_to": "ch2_scene5",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene5": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室前.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "そろそろ研究室も考えないとな。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "３人の教授と話す機会がある。"
+          }
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "岡教授に相談"
+              },
+              "go_to": "ch2_scene6",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "荒井教授に相談"
+              },
+              "go_to": "ch2_scene6",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ]
+              ]
+            },
+            {
+              "text": {
+                "ja": "五島教授に相談"
+              },
+              "go_to": "ch2_scene6",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene6": [
+    {
+      "background_image": {
+        "src": "data/bg/キャンパス.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "来年はいよいよ研究室選びだな。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "どこにしようかな……。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "（現在の好感度が表示される）"
+          }
+        },
+        {
+          "text": {
+            "ja": "岡教授　♥♥♥♡♡"
+          }
+        },
+        {
+          "text": {
+            "ja": "荒井教授　♥♥♥♥♡"
+          }
+        },
+        {
+          "text": {
+            "ja": "五島教授　♥♥♡♡♡"
+          }
+        },
+        {
+          "text": {
+            "ja": "（来年の選択で進路が決まりそうだ……。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（３年生編へ）"
+              },
+              "go_to": "ch3_scene1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

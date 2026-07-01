@@ -1,0 +1,971 @@
+{
+  "parameters": {
+    "title": "教授Galgame",
+    "launch_story": "ch4_oka_scene1",
+    "languares": [
+      "ja"
+    ],
+    "autosave": false,
+    "font": "Arial",
+    "font_size": "18px",
+    "text_panel": {
+      "size": [
+        "95%",
+        "25%"
+      ],
+      "color": "#efefff",
+      "color_text": "#000",
+      "indent_text": "8px",
+      "indent_bottom": "32px",
+      "size_text": "20px",
+      "style": "border-radius:16px;",
+      "dialog_speed": "10",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "font_family": "Arial",
+      "scroll": true
+    },
+    "name_panel": {
+      "size": [
+        "222px",
+        "48px"
+      ],
+      "position": [
+        "0",
+        "0",
+        "-48px",
+        "0"
+      ],
+      "indent_text": "8px",
+      "size_text": "18px",
+      "color_text": "#000",
+      "align": [
+        "flex-start",
+        "center"
+      ],
+      "font_family": "",
+      "color": ""
+    },
+    "buttons": [
+      {
+        "name": "tue_back",
+        "style": "border-radius:26px;",
+        "position": [
+          "2.5%",
+          "0",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＜"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      },
+      {
+        "name": "tue_next",
+        "style": "border-radius:26px;",
+        "position": [
+          "0",
+          "2.5%",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＞"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      }
+    ],
+    "variables": {
+      "favorability_oka": 0,
+      "favorability_arai": 0,
+      "favorability_goto": 0,
+      "route": 0
+    },
+    "characters": {
+      "char_hero": {
+        "ja": "主人公"
+      },
+      "char_takahashi": {
+        "ja": "高橋"
+      },
+      "char_oka": {
+        "ja": "岡教授"
+      },
+      "char_arai": {
+        "ja": "荒井教授"
+      },
+      "char_goto": {
+        "ja": "五島教授"
+      }
+    },
+    "sounds": {},
+    "cursors": {},
+    "font_files": {}
+  },
+  "blocks": {
+    "ch4_oka_scene1": [
+      "100px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch4_oka_scene2": [
+      "100px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch4_oka_scene3": [
+      "100px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch4_oka_love_end": [
+      "100px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch4_oka_grad_end": [
+      "400px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch4_arai_scene1": [
+      "600px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch4_arai_scene2": [
+      "600px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch4_arai_scene3": [
+      "600px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch4_arai_love_end": [
+      "600px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch4_arai_grad_end": [
+      "900px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch4_goto_scene1": [
+      "1100px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch4_goto_scene2": [
+      "1100px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch4_goto_scene3": [
+      "1100px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch4_goto_love_end": [
+      "1100px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch4_goto_grad_end": [
+      "1400px",
+      "700px",
+      "block",
+      false
+    ]
+  },
+  "ch4_oka_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業研究が始まる。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "頑張ります。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_oka_scene2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_oka_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "主人公が就職活動で悩む。"
+          }
+        },
+        {
+          "text": {
+            "ja": "君なら大丈夫。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "（先生の言葉って、不思議と安心する。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_oka_scene3",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_oka_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/発表会場.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "無事に発表を終える。"
+          }
+        },
+        {
+          "text": {
+            "ja": "よく頑張った。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "ありがとうございます。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "js": "story_json.parameters.variables.favorability_oka+=2;"
+        },
+        {
+          "legacy_choice": [
+            [
+              "favorability_oka",
+              ">",
+              15,
+              "ch4_oka_love_end"
+            ],
+            [
+              "favorability_oka",
+              ">",
+              -1000,
+              "ch4_oka_grad_end"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_oka_love_end": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "今日で君は学生ではなくなった。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "はい。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "だから伝えよう。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "君が好きだ。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "俺もです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "《岡教授END》"
+          }
+        }
+      ]
+    }
+  ],
+  "ch4_oka_grad_end": [
+    {
+      "background_image": {
+        "src": "data/bg/大学.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業式が終わる。"
+          }
+        },
+        {
+          "text": {
+            "ja": "卒業おめでとう。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "先生、４年間ありがとうございました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "君はよく努力した。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "先生のおかげです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "社会に出ても、その探究心を忘れないように。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "はい。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "またどこかで会おう。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "（先生に出会えて、本当によかった。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "《岡教授 卒業END》"
+          }
+        }
+      ]
+    }
+  ],
+  "ch4_arai_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業まであと少しだ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "最後まで頑張ります！"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_arai_scene2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_arai_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "就職活動がうまくいかず落ち込む。"
+          }
+        },
+        {
+          "text": {
+            "ja": "君なら絶対大丈夫だ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（先生に励まされると前向きになれる。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_arai_scene3",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_arai_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/発表会場.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "無事に発表を終える。"
+          }
+        },
+        {
+          "text": {
+            "ja": "最高の発表だったぞ！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "ありがとうございます！"
+          },
+          "name": "char_hero"
+        },
+        {
+          "js": "story_json.parameters.variables.favorability_arai+=3;"
+        },
+        {
+          "legacy_choice": [
+            [
+              "favorability_arai",
+              ">",
+              15,
+              "ch4_arai_love_end"
+            ],
+            [
+              "favorability_arai",
+              ">",
+              -1000,
+              "ch4_arai_grad_end"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_arai_love_end": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "４年間、本当によく頑張ったな！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "ありがとうございます。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "ずっと応援したいと思ってた。"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "先生…。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "いや、もう先生じゃないな。"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "付き合ってください。"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "《荒井教授END》"
+          }
+        }
+      ]
+    }
+  ],
+  "ch4_arai_grad_end": [
+    {
+      "background_image": {
+        "src": "data/bg/大学.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業式が終わる。"
+          }
+        },
+        {
+          "text": {
+            "ja": "卒業おめでとう！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "４年間ありがとうございました！"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "本当によく頑張ったな！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "先生のおかげで最後まで頑張れました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "社会に出ても無理するなよ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "はい！"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "また大学にも遊びに来い！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（先生に出会えてよかった。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "《荒井教授 卒業END》"
+          }
+        }
+      ]
+    }
+  ],
+  "ch4_goto_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業研究を始めよう。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "よろしくお願いします。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_goto_scene2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_goto_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "主人公が就職活動で悩む。"
+          }
+        },
+        {
+          "text": {
+            "ja": "君なら大丈夫だ。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "（先生の一言って不思議と安心する。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch4_goto_scene3",
+              "variables": [
+                [
+                  "favorability_goto",
+                  "add",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_goto_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/発表会場.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "無事に発表を終える。"
+          }
+        },
+        {
+          "text": {
+            "ja": "……よく頑張った。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "ありがとうございます。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "js": "story_json.parameters.variables.favorability_goto+=3;"
+        },
+        {
+          "legacy_choice": [
+            [
+              "favorability_goto",
+              ">",
+              15,
+              "ch4_goto_love_end"
+            ],
+            [
+              "favorability_goto",
+              ">",
+              -1000,
+              "ch4_goto_grad_end"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch4_goto_love_end": [
+    {
+      "background_image": {
+        "src": "data/bg/研究室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "研究以外で夢中になれたものがある。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "……。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "それは君だ。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "俺もです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "《五島教授END》"
+          }
+        }
+      ]
+    }
+  ],
+  "ch4_goto_grad_end": [
+    {
+      "background_image": {
+        "src": "data/bg/大学.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "卒業式が終わる。"
+          }
+        },
+        {
+          "text": {
+            "ja": "卒業、おめでとう。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "４年間ありがとうございました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "君はよく頑張った。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "先生に教えてもらえてよかったです。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "これからも学ぶことをやめるな。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "はい。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "……元気で。"
+          },
+          "name": "char_goto"
+        },
+        {
+          "text": {
+            "ja": "（もっと先生と研究したかったな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "《五島教授 卒業END》"
+          }
+        }
+      ]
+    }
+  ]
+}
