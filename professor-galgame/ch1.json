@@ -1,0 +1,787 @@
+{
+  "parameters": {
+    "title": "教授Galgame",
+    "launch_story": "ch1_scene1",
+    "languares": [
+      "ja"
+    ],
+    "autosave": false,
+    "font": "Arial",
+    "font_size": "18px",
+    "text_panel": {
+      "size": [
+        "95%",
+        "25%"
+      ],
+      "color": "#efefff",
+      "color_text": "#000",
+      "indent_text": "8px",
+      "indent_bottom": "32px",
+      "size_text": "20px",
+      "style": "border-radius:16px;",
+      "dialog_speed": "10",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "font_family": "Arial",
+      "scroll": true
+    },
+    "name_panel": {
+      "size": [
+        "222px",
+        "48px"
+      ],
+      "position": [
+        "0",
+        "0",
+        "-48px",
+        "0"
+      ],
+      "indent_text": "8px",
+      "size_text": "18px",
+      "color_text": "#000",
+      "align": [
+        "flex-start",
+        "center"
+      ],
+      "font_family": "",
+      "color": ""
+    },
+    "buttons": [
+      {
+        "name": "tue_back",
+        "style": "border-radius:26px;",
+        "position": [
+          "2.5%",
+          "0",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＜"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      },
+      {
+        "name": "tue_next",
+        "style": "border-radius:26px;",
+        "position": [
+          "0",
+          "2.5%",
+          "0",
+          "32px"
+        ],
+        "size": [
+          "38px",
+          "38px"
+        ],
+        "color": "#fff",
+        "color_text": "#000",
+        "size_text": "28px",
+        "text": {
+          "ja": "＞"
+        },
+        "hotspot": [
+          "0%",
+          "0%"
+        ]
+      }
+    ],
+    "variables": {
+      "favorability_oka": 0,
+      "favorability_arai": 0,
+      "favorability_goto": 0,
+      "route": 0
+    },
+    "characters": {
+      "char_hero": {
+        "ja": "主人公"
+      },
+      "char_takahashi": {
+        "ja": "高橋"
+      },
+      "char_oka": {
+        "ja": "岡教授"
+      },
+      "char_arai": {
+        "ja": "荒井教授"
+      },
+      "char_goto": {
+        "ja": "五島教授"
+      }
+    },
+    "sounds": {},
+    "cursors": {},
+    "font_files": {}
+  },
+  "blocks": {
+    "ch1_scene1": [
+      "100px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch1_scene2": [
+      "100px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch1_scene2_ask": [
+      "400px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch1_scene2_home": [
+      "700px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch1_scene2_snack": [
+      "1000px",
+      "300px",
+      "block",
+      false
+    ],
+    "ch1_scene3": [
+      "100px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch1_scene3_greet": [
+      "400px",
+      "500px",
+      "block",
+      false
+    ],
+    "ch1_scene4": [
+      "100px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch1_scene4_return_oka": [
+      "400px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch1_scene4_steal": [
+      "700px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch1_scene4_steal_caught": [
+      "1000px",
+      "700px",
+      "block",
+      false
+    ],
+    "ch1_scene4_return_arai": [
+      "1300px",
+      "700px",
+      "block",
+      false
+    ]
+  },
+  "ch1_scene1": [
+    {
+      "background_image": {
+        "src": "data/bg/通学路.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "４月。主人公は✕✕✕大学に入学する。"
+          }
+        },
+        {
+          "text": {
+            "ja": "大学生活始まったな。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "４年なんてあっという間かな。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "教授ってなんかかっこいいよな、楽しみだ。"
+          },
+          "name": "char_takahashi"
+        },
+        {
+          "text": {
+            "ja": "たしかに笑"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch1_scene2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene2": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "では授業を始めます。今日の出席は---"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "（めっちゃ丁寧でわかりやすいな）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "（ちょっとわからないとこがあったな）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "質問する"
+              },
+              "go_to": "ch1_scene2_ask"
+            },
+            {
+              "text": {
+                "ja": "帰る"
+              },
+              "go_to": "ch1_scene2_home"
+            },
+            {
+              "text": {
+                "ja": "寄り道して帰る"
+              },
+              "go_to": "ch1_scene2_snack"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene2_ask": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "どうした。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "少し気になるとこがあって。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "質問は歓迎だ。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch1_scene3",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene2_home": [
+    {
+      "background_image": {
+        "src": "data/bg/帰り道.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "「キャーーーーーー！！」"
+          }
+        },
+        {
+          "text": {
+            "ja": "！？"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "次の瞬間腹部が暖かくなり、視界が暗転した。"
+          }
+        },
+        {
+          "text": {
+            "ja": "どうやら通り魔に刺されたらしい"
+          }
+        },
+        {
+          "text": {
+            "ja": "《Wエンド》死亡"
+          }
+        }
+      ]
+    }
+  ],
+  "ch1_scene2_snack": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "コンビニでお菓子を買って帰った"
+          }
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch1_scene3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene3": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "数日後。"
+          }
+        },
+        {
+          "text": {
+            "ja": "ドアが勢いよく開く。"
+          }
+        },
+        {
+          "text": {
+            "ja": "おはようございます！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（教室がざわつく）！？"
+          }
+        },
+        {
+          "text": {
+            "ja": "大学生活、不安な人もいると思います！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "勉強でも人間関係でも困ったら相談してください！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "皆さんが成長できるよう全力でサポートします！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（なんだろう…安心するな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "授業終了後。"
+          }
+        },
+        {
+          "text": {
+            "ja": "それではまた次回！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "挨拶する"
+              },
+              "go_to": "ch1_scene3_greet"
+            },
+            {
+              "text": {
+                "ja": "そのまま帰る"
+              },
+              "go_to": "ch1_scene4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene3_greet": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "ありがとうございました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "おう！こちらこそ来てくれてありがとう！！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "（嬉しそうだな。）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch1_scene4",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene4": [
+    {
+      "background_image": {
+        "src": "data/bg/廊下.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "（あれ、これ岡教授の緑色のレーザーポインター...?）"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "たしか緑色のやつ高いって言ってたよな"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "『選択肢』"
+          },
+          "choice": [
+            {
+              "text": {
+                "ja": "岡教授に届ける"
+              },
+              "go_to": "ch1_scene4_return_oka"
+            },
+            {
+              "text": {
+                "ja": "パクって売る"
+              },
+              "go_to": "ch1_scene4_steal"
+            },
+            {
+              "text": {
+                "ja": "荒井教授に渡す"
+              },
+              "go_to": "ch1_scene4_return_arai"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene4_return_oka": [
+    {
+      "background_image": {
+        "src": "data/bg/廊下.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "助かった、ありがとう。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": "いえ。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（２年生編へ）"
+              },
+              "go_to": "ch2_scene1",
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene4_steal": [
+    {
+      "background_image": {
+        "src": "data/bg/廊下.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "...売っちゃお。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "5000円を手に入れた"
+          }
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ"
+              },
+              "go_to": "ch1_scene4_steal_caught"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_scene4_steal_caught": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "翌日の授業後。"
+          }
+        },
+        {
+          "text": {
+            "ja": "防犯カメラを確認した。"
+          },
+          "name": "char_oka"
+        },
+        {
+          "text": {
+            "ja": ".......。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "こうして主人公は退学になった。"
+          }
+        },
+        {
+          "text": {
+            "ja": "《Cエンド》退学"
+          }
+        }
+      ]
+    }
+  ],
+  "ch1_scene4_return_arai": [
+    {
+      "background_image": {
+        "src": "data/bg/廊下.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "これ、落ちてました。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "岡先生のじゃないか？"
+          },
+          "name": "char_arai"
+        },
+        {
+          "text": {
+            "ja": "そうなんですか。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "あとで私から渡しておくよ！"
+          },
+          "name": "char_arai"
+        },
+        {
+          "choice": [
+            {
+              "text": {
+                "ja": "次へ（２年生編へ）"
+              },
+              "go_to": "ch2_scene1",
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  1
+                ],
+                [
+                  "favorability_oka",
+                  "add",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
