@@ -103,7 +103,11 @@
       "favorability_oka": 0,
       "favorability_arai": 0,
       "favorability_goto": 0,
-      "route": 0
+      "route": 0,
+      "quiz_oka_correct": 0,
+      "quiz_arai_correct": 0,
+      "quiz_goto_correct": 0,
+      "goto_love_gate": 0
     },
     "characters": {
       "char_hero": {
@@ -196,6 +200,132 @@
     "ch1_scene4_return_arai": [
       "1300px",
       "700px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q1": [
+      "1000px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q1_correct": [
+      "1000px",
+      "240px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q1_wrong": [
+      "1000px",
+      "380px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q2": [
+      "1000px",
+      "520px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q2_correct": [
+      "1000px",
+      "660px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q2_wrong": [
+      "1000px",
+      "800px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q3": [
+      "1280px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q3_correct": [
+      "1280px",
+      "240px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_q3_wrong": [
+      "1280px",
+      "380px",
+      "block",
+      false
+    ],
+    "ch1_quiz_oka_result": [
+      "1280px",
+      "520px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q1": [
+      "1280px",
+      "660px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q1_correct": [
+      "1280px",
+      "800px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q1_wrong": [
+      "1560px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q2": [
+      "1560px",
+      "240px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q2_correct": [
+      "1560px",
+      "380px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q2_wrong": [
+      "1560px",
+      "520px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q3": [
+      "1560px",
+      "660px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q3_correct": [
+      "1560px",
+      "800px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_q3_wrong": [
+      "1840px",
+      "100px",
+      "block",
+      false
+    ],
+    "ch1_quiz_arai_result": [
+      "1840px",
+      "240px",
+      "block",
+      false
+    ],
+    "ch1_quiz_fail_end": [
+      "1840px",
+      "380px",
       "block",
       false
     ]
@@ -922,7 +1052,7 @@
         {
           "choice": [
             {
-              "go_to": "ch2_scene1",
+              "go_to": "ch1_quiz_oka_q1",
               "position": [
                 "50%",
                 "0",
@@ -1098,7 +1228,7 @@
         {
           "choice": [
             {
-              "go_to": "ch2_scene1",
+              "go_to": "ch1_quiz_oka_q1",
               "position": [
                 "50%",
                 "0",
@@ -1140,6 +1270,1646 @@
               ]
             }
           ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q1": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【岡教授の小テスト　第1問】\n「人間機械系（Man Machine System）」における基本的な考え方として、最も適切なものはどれか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．人間はシステムにとってノイズであるため、可能な限り人間の操作を制限する。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．自動化を極限まで進め、人間をシステムから完全に排除することを目指す。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．機械単体の絶対的なスペック（処理速度や精度など）の向上を最優先とする。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q1_correct",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．人間と機械を1つのシステムとして捉え、システム全体の性能向上を目指す。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_oka_correct",
+                  "add",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q1_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q2",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q1_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はDでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q2",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q2": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【岡教授の小テスト　第2問】\n「インタフェース」の説明として、最も適切なものはどれか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．「標準的な成人男性」を基準として設計することで、万人が最も使いやすいインタフェースとなる。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．機械の処理速度を高めるためのソフトウェアの内部構造のことである。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．システムの操作画面における、視覚的な美しさや装飾性のみを指す言葉である。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q2_correct",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．人間と機械の接面であり、その良し悪しは人間の感覚器官・運動器官との関係性で決まる。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_oka_correct",
+                  "add",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q2_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q3",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q2_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はDでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q3",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q3": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【岡教授の小テスト　第3問】\n「ユニバーサルデザイン」の基本的な考え方として最も適切なものはどれか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．特定の社会的弱者のみを対象とした、専用の特別な製品を開発することである。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．すでに存在する物理的な障壁（バリア）を、事後的に取り除くことである。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q3_correct",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．最初から、障害の有無に関わらず、すべての人のためのデザインを行うことである。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_oka",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_oka_correct",
+                  "add",
+                  1
+                ]
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_oka_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．健常な成人男性を対象とした標準的な製品を、大量生産して安価に提供することである。"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q3_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_result",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_q3_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はCでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_oka_result",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_oka_result": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "legacy_choice": [
+            [
+              "quiz_oka_correct",
+              ">",
+              0,
+              "ch1_quiz_arai_q1"
+            ],
+            [
+              "quiz_oka_correct",
+              ">",
+              -1000,
+              "ch1_quiz_fail_end"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q1": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【荒井教授の小テスト　第1問】\n信号 S[n]=−8cos(2π・5/24・n) を N=24点でDFTしたとき、実部XR[k]のインパルスの高さとして正しいものはどれか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．0"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q1_correct",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．−4"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_arai_correct",
+                  "add",
+                  1
+                ]
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．4"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q1_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．−8"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q1_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q2",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q1_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はBでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q2",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q2": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【荒井教授の小テスト　第2問】\nf1=4000Hz の純音をサンプリング周波数fsでサンプリングした際、2000Hz の位置にエイリアシングが観測されました。このときの fsはいくらか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．2000Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．4000Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q2_correct",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．6000Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_arai_correct",
+                  "add",
+                  1
+                ]
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q2_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．8000Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q2_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q3",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q2_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はCでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q3",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q3": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "【荒井教授の小テスト　第3問】\nN=72点のDFTにおいて、サンプリング周波数が fs=3600Hz のとき、周波数分解能 Δf はいくらになるか。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_q3_correct",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "82.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "A．50Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
+              "variables": [
+                [
+                  "favorability_arai",
+                  "add",
+                  3
+                ],
+                [
+                  "quiz_arai_correct",
+                  "add",
+                  1
+                ]
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "17.5%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "B．0.02Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "47.5%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "C．72Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            },
+            {
+              "go_to": "ch1_quiz_arai_q3_wrong",
+              "position": [
+                "10%",
+                "10%",
+                "52.5%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "D．100Hz"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q3_correct": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "正解！"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_result",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_q3_wrong": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "不正解…正解はAでした。"
+          }
+        },
+        {
+          "choice": [
+            {
+              "go_to": "ch1_quiz_arai_result",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "次へ"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_arai_result": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "legacy_choice": [
+            [
+              "quiz_arai_correct",
+              ">",
+              0,
+              "ch2_scene1"
+            ],
+            [
+              "quiz_arai_correct",
+              ">",
+              -1000,
+              "ch1_quiz_fail_end"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ch1_quiz_fail_end": [
+    {
+      "background_image": {
+        "src": "data/bg/教室.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "text": {
+            "ja": "小テストの結果があまりにも壊滅的だった。"
+          }
+        },
+        {
+          "text": {
+            "ja": "……。"
+          },
+          "name": "char_hero"
+        },
+        {
+          "text": {
+            "ja": "こうして主人公は成績不振により退学になった。"
+          }
+        },
+        {
+          "text": {
+            "ja": "《Cエンド》退学"
+          }
         }
       ]
     }

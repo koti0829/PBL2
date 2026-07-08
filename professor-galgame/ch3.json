@@ -103,7 +103,11 @@
       "favorability_oka": 0,
       "favorability_arai": 0,
       "favorability_goto": 0,
-      "route": 0
+      "route": 0,
+      "quiz_oka_correct": 0,
+      "quiz_arai_correct": 0,
+      "quiz_goto_correct": 0,
+      "goto_love_gate": 0
     },
     "characters": {
       "char_hero": {

@@ -103,7 +103,11 @@
       "favorability_oka": 0,
       "favorability_arai": 0,
       "favorability_goto": 0,
-      "route": 0
+      "route": 0,
+      "quiz_oka_correct": 0,
+      "quiz_arai_correct": 0,
+      "quiz_goto_correct": 0,
+      "goto_love_gate": 0
     },
     "characters": {
       "char_hero": {
@@ -978,14 +982,14 @@
           "name": "char_hero"
         },
         {
-          "js": "story_json.parameters.variables.favorability_goto+=3;"
+          "js": "story_json.parameters.variables.favorability_goto+=3;var fav=story_json.parameters.variables.favorability_goto;var quiz=story_json.parameters.variables.quiz_goto_correct;story_json.parameters.variables.goto_love_gate=(fav>15 && quiz>=3)?1:0;"
         },
         {
           "legacy_choice": [
             [
-              "favorability_goto",
+              "goto_love_gate",
               ">",
-              15,
+              0,
               "ch4_goto_love_end"
             ],
             [
