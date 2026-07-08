@@ -230,10 +230,34 @@
         {
           "choice": [
             {
+              "go_to": "ch2_scene2",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "次へ"
               },
-              "go_to": "ch2_scene2"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             }
           ]
         }
@@ -289,16 +313,64 @@
           },
           "choice": [
             {
+              "go_to": "ch2_scene2_greet",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "挨拶する"
               },
-              "go_to": "ch2_scene2_greet"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             },
             {
+              "go_to": "ch2_scene3",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "そのまま帰る"
               },
-              "go_to": "ch2_scene3"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             }
           ]
         }
@@ -330,10 +402,34 @@
         {
           "choice": [
             {
+              "go_to": "ch2_scene3",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "次へ"
               },
-              "go_to": "ch2_scene3",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_goto",
@@ -374,16 +470,64 @@
           },
           "choice": [
             {
+              "go_to": "ch2_scene3_carry",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "65%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "荷物を持つ"
               },
-              "go_to": "ch2_scene3_carry"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             },
             {
+              "go_to": "ch2_scene3_bow",
+              "position": [
+                "10%",
+                "10%",
+                "35%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "会釈だけする"
               },
-              "go_to": "ch2_scene3_bow"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             }
           ]
         }
@@ -409,10 +553,34 @@
         {
           "choice": [
             {
+              "go_to": "ch2_scene4",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "次へ"
               },
-              "go_to": "ch2_scene4",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_goto",
@@ -445,10 +613,34 @@
         {
           "choice": [
             {
+              "go_to": "ch2_scene4",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "次へ"
               },
-              "go_to": "ch2_scene4",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_goto",
@@ -483,10 +675,34 @@
           },
           "choice": [
             {
+              "go_to": "ch2_scene5",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "76.67%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "岡教授おすすめの本を借りる"
               },
-              "go_to": "ch2_scene5",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_oka",
@@ -496,10 +712,34 @@
               ]
             },
             {
+              "go_to": "ch2_scene5",
+              "position": [
+                "10%",
+                "10%",
+                "23.33%",
+                "53.33%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "荒井教授おすすめの本を借りる"
               },
-              "go_to": "ch2_scene5",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_arai",
@@ -509,10 +749,34 @@
               ]
             },
             {
+              "go_to": "ch2_scene5",
+              "position": [
+                "10%",
+                "10%",
+                "46.67%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "五島教授おすすめの本を借りる"
               },
-              "go_to": "ch2_scene5",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_goto",
@@ -553,10 +817,34 @@
           },
           "choice": [
             {
+              "go_to": "ch2_scene6",
+              "position": [
+                "10%",
+                "10%",
+                "0%",
+                "76.67%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "岡教授に相談"
               },
-              "go_to": "ch2_scene6",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_oka",
@@ -566,10 +854,34 @@
               ]
             },
             {
+              "go_to": "ch2_scene6",
+              "position": [
+                "10%",
+                "10%",
+                "23.33%",
+                "53.33%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "荒井教授に相談"
               },
-              "go_to": "ch2_scene6",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_arai",
@@ -579,10 +891,34 @@
               ]
             },
             {
+              "go_to": "ch2_scene6",
+              "position": [
+                "10%",
+                "10%",
+                "46.67%",
+                "30%"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "五島教授に相談"
               },
-              "go_to": "ch2_scene6",
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ],
               "variables": [
                 [
                   "favorability_goto",
@@ -647,10 +983,34 @@
         {
           "choice": [
             {
+              "go_to": "ch3_scene1",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
               "text": {
                 "ja": "次へ（３年生編へ）"
               },
-              "go_to": "ch3_scene1"
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": {
+                "ja": ""
+              },
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
             }
           ]
         }
