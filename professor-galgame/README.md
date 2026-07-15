@@ -1,40 +1,269 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 教授Galgame — チーム作業マニュアル
 
-## Getting Started
+Windowsパソコンで、担当のシナリオファイルを編集してチームに共有するまでの手順です。実際にクリック・入力する場所だけを書いています。
 
-First, run the development server:
+**手順の流れ**: 道具を準備 → コピーを取得 → 最新版に更新 → Tuesday JSで編集 → GitHubへ送信
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+内容: 1.道具を準備する　2.リポジトリを取得する　3.最新版を取得する　4.Tuesday JSで編集する　5.画像素材の保存場所　6.GitHubへ送信する　7.困ったときは
+
+## 1. 道具を準備する（最初の1回だけ）
+
+選んだやり方によって、入れておくものが変わる。
+
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
+
+1. ブラウザで `desktop.github.com` を開き、**Download for Windows** をクリックする。
+2. ダウンロードした `GitHubDesktopSetup-x64.exe` をダブルクリックする。自動でインストールが始まり、そのまま起動する。
+3. 起動した画面で **Sign in to GitHub.com** をクリック → ブラウザが開くので、GitHubのアカウントでログインして許可する。
+4. 名前とメールアドレスの入力を求められたら、そのまま **Continue** で進めてよい。
+
+</details>
+
+<details>
+<summary><b>Webの場合</b></summary>
+
+追加のインストールは不要。ブラウザと、GitHubのアカウント（ログイン済みであること）だけ用意する。
+
+</details>
+
+<details>
+<summary><b>ターミナルの場合</b></summary>
+
+1. ブラウザで `git-scm.com` を開き、Windows用のインストーラーをダウンロードする。
+2. ダウンロードした `Git-x.x.x-64-bit.exe` を実行し、内容は変えずに次へ次へと進めてインストールする。
+3. 作業したいフォルダ（例：デスクトップ）をエクスプローラーで開き、何もない場所で右クリック →「Open Git Bash here」をクリックする。黒い画面（ターミナル）が開く。以降はここに文字を打ってEnterキーで実行する。
+
+</details>
+
+## 2. リポジトリを自分のパソコンに取得する（最初の1回だけ）
+
+「リポジトリ」＝このプロジェクトのデータ一式のこと。
+
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
+
+1. GitHub Desktopの上部メニューから `File` → **Clone repository...** をクリックする。
+2. 開いた画面上部の **URL** タブをクリックする。
+3. `Repository URL` の欄にリポジトリのURLを貼り付ける。
+4. `Local Path` の **Choose...** で保存先フォルダを選ぶ（例：デスクトップやドキュメント）。**このフォルダの場所を覚えておく**。この先、毎回ここを開くことになる。
+5. **Clone** ボタンを押して完了を待つ。
+
+</details>
+
+<details>
+<summary><b>Webの場合</b></summary>
+
+1. リポジトリのページをブラウザで開く。
+2. 緑色の `<> Code` ボタンをクリックする。
+3. 開いたメニューの一番下にある **Download ZIP** をクリックする。
+4. ダウンロードされたzipファイルを右クリック →「すべて展開」をクリックし、好きな場所（例：デスクトップ）に展開する。**この展開先フォルダの場所を覚えておく**。
+
+</details>
+
+<details>
+<summary><b>ターミナルの場合</b></summary>
+
+1. Git Bashで、保存したい場所へ移動する。**このフォルダの場所を覚えておく**。
+
+   ```bash
+   cd Desktop
+   ```
+
+2. 次のコマンドを入力してEnterを押す。
+
+   ```bash
+   git clone https://github.com/koti0829/PBL2.git
+   ```
+
+</details>
+
+> **メモ:** 取得が終わると、選んだフォルダの中に `PBL2` というフォルダができている。その中の `professor-galgame` フォルダが、これから編集する本体。
+
+## 3. 作業前に最新版を取得する（毎回やる）
+
+他のメンバーが送った最新の変更を、自分のパソコンに取り込むこと。作業を始める前に必ず行う。
+
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
+
+1. GitHub Desktopを開く。左上のリポジトリ名が `PBL2` になっていることを確認する。
+2. 画面上部中央の **Fetch origin** ボタンを押す。
+3. ボタンが **Pull origin** に変わったら、もう一度クリックする（変わらなければ、すでに最新なのでそのままでよい）。
+
+</details>
+
+<details>
+<summary><b>Webの場合</b></summary>
+
+1. フェーズ2と同じ手順（`<> Code` → **Download ZIP**）をもう一度行う。
+2. 展開するときに上書きの確認が出たら「すべて置き換える」を選ぶ。前のフォルダは削除してから展開してもよい。
+
+</details>
+
+<details>
+<summary><b>ターミナルの場合</b></summary>
+
+1. `PBL2` フォルダの中でGit Bashを開く（すでに中にいる場合は不要）。
+
+   ```bash
+   cd PBL2
+   ```
+
+2. 次のコマンドを入力してEnterを押す。
+
+   ```bash
+   git pull
+   ```
+
+</details>
+
+## 4. Tuesday JSで編集する
+
+ここからは、どのやり方を選んでいても共通の作業。自分の担当ファイルだけを開いて編集する。
+
+1. ブラウザで `kirilllive.github.io/tuesday-js/translate/ja_tuesday_visual.html` を開く。
+2. 画面左上のフォルダのアイコン（`プロジェクトフォルダーの読込`）をクリックする。
+3. フェーズ2で取得した `PBL2 → professor-galgame` フォルダの中から、**自分の担当ファイル**（`ch2.json` など）を選んで開く。
+4. シナリオ・分岐・演出を編集する。
+5. 編集が終わったら、画面左上のフロッピーディスクのアイコン（`スクリプトを記述したJSONファイルを保存`）をクリックして保存する。
+
+> **注意:** 保存するときは、**必ず自分の担当ファイルと同じ名前・同じ場所**に上書き保存すること。新しい名前で保存すると、変更として認識されず、チームに共有されない。
+
+## 5. 画像素材の保存場所
+
+背景画像・立ち絵は、専用のフォルダにファイルを置くだけでよい（JSON側の編集は不要）。
+
+```
+professor-galgame/
+└── data/
+    ├── bg/       ← 背景画像はここ
+    └── chara/    ← 立ち絵はここ
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **メモ:** ファイル名は、JSON内で指定している名前と**完全に一致**させること。すでにあるファイルと同じ名前を使う場合は、他のメンバーも参照しているので、上書き前に一声かける。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 6. 編集内容をGitHubへ送信する
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+変更内容に一言メモを付けて記録し（コミット）、GitHubにアップロードする（プッシュ）。
 
-## Learn More
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
 
-To learn more about Next.js, take a look at the following resources:
+1. GitHub Desktopに戻る。変更したファイルが画面左側に自動的に一覧表示される。
+2. 画面左下の入力欄（`Summary`）に、何をしたか一言メモを書く（例：「2年生編 第3話まで作成」）。
+3. **Commit to main** ボタンを押す。
+4. 画面上部の **Push origin** ボタンを押す。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</details>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<details>
+<summary><b>Webの場合</b></summary>
 
-## Deploy on Vercel
+1. リポジトリのページで `professor-galgame` フォルダまで進む。
+2. **Add file** → **Upload files** をクリックする。
+3. 編集済みの自分の担当ファイル（`ch2.json` など）を画面にドラッグ&ドロップする。同じ名前のファイルは自動的に上書き対象になる。
+4. ページ下部の入力欄に何をしたか一言メモを書く。
+5. **Commit changes** ボタンを押す。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</details>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<details>
+<summary><b>ターミナルの場合</b></summary>
 
-## Team Development
+1. 変更を記録の対象に追加する。
 
-For this project's Tuesday JS-based novel game development rules (file/scene naming, asset folder structure, daily Git workflow, and the final scene-merge procedure), see [WORKFLOW.md](./WORKFLOW.md).
+   ```bash
+   git add .
+   ```
+
+2. 何をしたか一言メモを付けて記録する（メッセージ部分は自分の作業内容に書き換える）。
+
+   ```bash
+   git commit -m "2年生編 第3話まで作成"
+   ```
+
+3. GitHubへアップロードする。
+
+   ```bash
+   git push
+   ```
+
+</details>
+
+> **メモ:** これで完了。以後は**フェーズ3（最新版を取得）→ フェーズ4（編集）→ フェーズ6（送信）**の繰り返しになる。
+
+## 7. 困ったときは
+
+実際に手を動かして直せる対処だけを載せている。
+
+### 送信が失敗する（リモートに新しい変更がある、と表示される）
+
+誰かが自分より先に送信していると起きる。自分の変更を送る前に、最新版を取り込む必要がある。
+
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
+
+フェーズ3の手順（**Fetch origin** → **Pull origin**）を行ってから、もう一度 **Push origin** を押す。
+
+</details>
+
+<details>
+<summary><b>Webの場合</b></summary>
+
+アップロード先のフォルダを開き直して最新のファイルを確認し、その最新版に自分の変更を反映してから、もう一度アップロードし直す。
+
+</details>
+
+<details>
+<summary><b>ターミナルの場合</b></summary>
+
+```bash
+git pull
+```
+
+を実行してから、もう一度 `git push` を実行する。
+
+</details>
+
+### Tuesday JSで開いたファイルの中身が空・崩れて見える
+
+まだ**保存はしない**こと。
+
+1. ブラウザを再読み込みし、フォルダの読込からもう一度正しいファイルを選び直す。
+2. それでも直らない場合、今の編集内容をメモ帳などに控えておいてから、フェーズ3の手順でファイルを最新版に戻し、控えた内容をもう一度反映して保存し直す。
+
+### 更新時に「conflict（衝突）」と表示される
+
+自分の担当ファイル以外は編集しない運用なので、基本的には起きない。起きた場合は、今の編集内容をいったんメモ帳などにコピーして退避してから、以下の方法でやり直す。
+
+<details>
+<summary><b>GitHub Desktopの場合</b></summary>
+
+フォルダを一度削除し、フェーズ2の手順で新しく取得し直す。退避しておいた内容を、自分の担当ファイルにもう一度反映して保存する。
+
+</details>
+
+<details>
+<summary><b>Webの場合</b></summary>
+
+表示されている最新のファイル内容を確認し、自分の変更点をその最新版に反映してから、もう一度アップロードし直す。
+
+</details>
+
+<details>
+<summary><b>ターミナルの場合</b></summary>
+
+```bash
+git checkout -- 自分の担当ファイル名
+```
+
+で最新版に戻し、退避しておいた内容をもう一度反映して保存し、フェーズ6の手順で送信し直す。
+
+</details>
+
+---
+
+## この他の資料
+
+- ファイル・シーン命名規則や合体手順など、開発ルールの詳細は [WORKFLOW.md](./WORKFLOW.md) を参照。
