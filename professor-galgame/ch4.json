@@ -1,7 +1,7 @@
 {
   "parameters": {
     "title": "教授Galgame",
-    "launch_story": "ch4_oka_scene1",
+    "launch_story": "ch4_okano_scene1",
     "languares": [
       "ja"
     ],
@@ -100,12 +100,12 @@
       }
     ],
     "variables": {
-      "favorability_oka": 0,
-      "favorability_arai": 0,
+      "favorability_okano": 0,
+      "favorability_araki": 0,
       "favorability_goto": 0,
       "route": 0,
-      "quiz_oka_correct": 0,
-      "quiz_arai_correct": 0,
+      "quiz_okano_correct": 0,
+      "quiz_araki_correct": 0,
       "quiz_goto_correct": 0,
       "goto_love_gate": 0
     },
@@ -116,76 +116,88 @@
       "char_takahashi": {
         "ja": "高橋"
       },
-      "char_oka": {
-        "ja": "岡教授"
+      "char_okano": {
+        "ja": "岡野教授"
       },
-      "char_arai": {
-        "ja": "荒井教授"
+      "char_araki": {
+        "ja": "荒木教授"
       },
       "char_goto": {
         "ja": "五島教授"
       }
     },
-    "sounds": {},
+    "sounds": {
+      "quiz_correct": "data/sound/クイズ正解音.mp3",
+      "quiz_wrong": "data/sound/クイズハズレ音.mp3",
+      "button_confirm": "data/sound/ボタン決定音.mp3",
+      "door_open": "data/sound/ドア開ける音.mp3",
+      "scream": "data/sound/キャー効果音.mp3",
+      "shock": "data/sound/ガーン.mp3",
+      "ominous": "data/sound/不穏.mp3",
+      "sell": "data/sound/物を売る音.mp3",
+      "continue": "data/sound/コンティニュー時.mp3",
+      "crowd": "data/sound/人混み、話し声.mp3",
+      "run": "data/sound/走る移動音.mp3"
+    },
     "cursors": {},
     "font_files": {}
   },
   "blocks": {
-    "ch4_oka_scene1": [
+    "ch4_okano_scene1": [
       "100px",
       "100px",
       "block",
       false
     ],
-    "ch4_oka_scene2": [
+    "ch4_okano_scene2": [
       "100px",
       "300px",
       "block",
       false
     ],
-    "ch4_oka_scene3": [
+    "ch4_okano_scene3": [
       "100px",
       "500px",
       "block",
       false
     ],
-    "ch4_oka_love_end": [
+    "ch4_okano_love_end": [
       "100px",
       "700px",
       "block",
       false
     ],
-    "ch4_oka_grad_end": [
+    "ch4_okano_grad_end": [
       "400px",
       "700px",
       "block",
       false
     ],
-    "ch4_arai_scene1": [
+    "ch4_araki_scene1": [
       "600px",
       "100px",
       "block",
       false
     ],
-    "ch4_arai_scene2": [
+    "ch4_araki_scene2": [
       "600px",
       "300px",
       "block",
       false
     ],
-    "ch4_arai_scene3": [
+    "ch4_araki_scene3": [
       "600px",
       "500px",
       "block",
       false
     ],
-    "ch4_arai_love_end": [
+    "ch4_araki_love_end": [
       "600px",
       "700px",
       "block",
       false
     ],
-    "ch4_arai_grad_end": [
+    "ch4_araki_grad_end": [
       "900px",
       "700px",
       "block",
@@ -222,10 +234,10 @@
       false
     ]
   },
-  "ch4_oka_scene1": [
+  "ch4_okano_scene1": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -236,7 +248,23 @@
           "text": {
             "ja": "卒業研究が始まる。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -247,7 +275,7 @@
         {
           "choice": [
             {
-              "go_to": "ch4_oka_scene2",
+              "go_to": "ch4_okano_scene2",
               "position": [
                 "50%",
                 "0",
@@ -268,9 +296,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -281,10 +307,10 @@
       ]
     }
   ],
-  "ch4_oka_scene2": [
+  "ch4_okano_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -294,13 +320,29 @@
         {
           "text": {
             "ja": "主人公が就職活動で悩む。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "君なら大丈夫。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -311,7 +353,7 @@
         {
           "choice": [
             {
-              "go_to": "ch4_oka_scene3",
+              "go_to": "ch4_okano_scene3",
               "position": [
                 "50%",
                 "0",
@@ -332,16 +374,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
@@ -352,10 +392,10 @@
       ]
     }
   ],
-  "ch4_oka_scene3": [
+  "ch4_okano_scene3": [
     {
       "background_image": {
-        "src": "data/bg/発表会場.png",
+        "src": "data/bg/発表会場.jpg",
         "size": [
           "100%",
           "100%"
@@ -365,13 +405,29 @@
         {
           "text": {
             "ja": "無事に発表を終える。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "よく頑張った。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -380,31 +436,31 @@
           "name": "char_hero"
         },
         {
-          "js": "story_json.parameters.variables.favorability_oka+=2;"
+          "js": "story_json.parameters.variables.favorability_okano+=2;"
         },
         {
           "legacy_choice": [
             [
-              "favorability_oka",
+              "favorability_okano",
               ">",
               15,
-              "ch4_oka_love_end"
+              "ch4_okano_love_end"
             ],
             [
-              "favorability_oka",
+              "favorability_okano",
               ">",
               -1000,
-              "ch4_oka_grad_end"
+              "ch4_okano_grad_end"
             ]
           ]
         }
       ]
     }
   ],
-  "ch4_oka_love_end": [
+  "ch4_okano_love_end": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -415,7 +471,23 @@
           "text": {
             "ja": "今日で君は学生ではなくなった。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武_照れ顔.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -427,13 +499,13 @@
           "text": {
             "ja": "だから伝えよう。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
             "ja": "君が好きだ。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -443,16 +515,16 @@
         },
         {
           "text": {
-            "ja": "《岡教授END》"
+            "ja": "《岡野教授END》"
           }
         }
       ]
     }
   ],
-  "ch4_oka_grad_end": [
+  "ch4_okano_grad_end": [
     {
       "background_image": {
-        "src": "data/bg/大学.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -462,13 +534,29 @@
         {
           "text": {
             "ja": "卒業式が終わる。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "卒業おめでとう。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -480,7 +568,7 @@
           "text": {
             "ja": "君はよく努力した。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -492,7 +580,7 @@
           "text": {
             "ja": "社会に出ても、その探究心を忘れないように。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -504,7 +592,7 @@
           "text": {
             "ja": "またどこかで会おう。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -514,16 +602,16 @@
         },
         {
           "text": {
-            "ja": "《岡教授 卒業END》"
+            "ja": "《岡野教授 卒業END》"
           }
         }
       ]
     }
   ],
-  "ch4_arai_scene1": [
+  "ch4_araki_scene1": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -534,7 +622,23 @@
           "text": {
             "ja": "卒業まであと少しだ！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -545,7 +649,7 @@
         {
           "choice": [
             {
-              "go_to": "ch4_arai_scene2",
+              "go_to": "ch4_araki_scene2",
               "position": [
                 "50%",
                 "0",
@@ -566,9 +670,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -579,10 +681,10 @@
       ]
     }
   ],
-  "ch4_arai_scene2": [
+  "ch4_araki_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -592,13 +694,29 @@
         {
           "text": {
             "ja": "就職活動がうまくいかず落ち込む。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "君なら絶対大丈夫だ！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -609,7 +727,7 @@
         {
           "choice": [
             {
-              "go_to": "ch4_arai_scene3",
+              "go_to": "ch4_araki_scene3",
               "position": [
                 "50%",
                 "0",
@@ -630,16 +748,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ]
@@ -650,10 +766,10 @@
       ]
     }
   ],
-  "ch4_arai_scene3": [
+  "ch4_araki_scene3": [
     {
       "background_image": {
-        "src": "data/bg/発表会場.png",
+        "src": "data/bg/発表会場.jpg",
         "size": [
           "100%",
           "100%"
@@ -663,13 +779,29 @@
         {
           "text": {
             "ja": "無事に発表を終える。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "最高の発表だったぞ！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -678,31 +810,31 @@
           "name": "char_hero"
         },
         {
-          "js": "story_json.parameters.variables.favorability_arai+=3;"
+          "js": "story_json.parameters.variables.favorability_araki+=3;"
         },
         {
           "legacy_choice": [
             [
-              "favorability_arai",
+              "favorability_araki",
               ">",
               15,
-              "ch4_arai_love_end"
+              "ch4_araki_love_end"
             ],
             [
-              "favorability_arai",
+              "favorability_araki",
               ">",
               -1000,
-              "ch4_arai_grad_end"
+              "ch4_araki_grad_end"
             ]
           ]
         }
       ]
     }
   ],
-  "ch4_arai_love_end": [
+  "ch4_araki_love_end": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -713,7 +845,23 @@
           "text": {
             "ja": "４年間、本当によく頑張ったな！！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗_照れ顔.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -725,7 +873,7 @@
           "text": {
             "ja": "ずっと応援したいと思ってた。"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -737,26 +885,26 @@
           "text": {
             "ja": "いや、もう先生じゃないな。"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
             "ja": "付き合ってください。"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
-            "ja": "《荒井教授END》"
+            "ja": "《荒木教授END》"
           }
         }
       ]
     }
   ],
-  "ch4_arai_grad_end": [
+  "ch4_araki_grad_end": [
     {
       "background_image": {
-        "src": "data/bg/大学.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -766,13 +914,29 @@
         {
           "text": {
             "ja": "卒業式が終わる。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "卒業おめでとう！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -784,7 +948,7 @@
           "text": {
             "ja": "本当によく頑張ったな！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -796,7 +960,7 @@
           "text": {
             "ja": "社会に出ても無理するなよ！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -808,7 +972,7 @@
           "text": {
             "ja": "また大学にも遊びに来い！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -818,7 +982,7 @@
         },
         {
           "text": {
-            "ja": "《荒井教授 卒業END》"
+            "ja": "《荒木教授 卒業END》"
           }
         }
       ]
@@ -827,7 +991,7 @@
   "ch4_goto_scene1": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -838,7 +1002,23 @@
           "text": {
             "ja": "卒業研究を始めよう。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -870,9 +1050,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -886,7 +1064,7 @@
   "ch4_goto_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -896,7 +1074,23 @@
         {
           "text": {
             "ja": "主人公が就職活動で悩む。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -934,9 +1128,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -957,7 +1149,7 @@
   "ch4_goto_scene3": [
     {
       "background_image": {
-        "src": "data/bg/発表会場.png",
+        "src": "data/bg/発表会場.jpg",
         "size": [
           "100%",
           "100%"
@@ -967,7 +1159,23 @@
         {
           "text": {
             "ja": "無事に発表を終える。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1006,7 +1214,7 @@
   "ch4_goto_love_end": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1017,7 +1225,23 @@
           "text": {
             "ja": "研究以外で夢中になれたものがある。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太_照れ顔.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1048,7 +1272,7 @@
   "ch4_goto_grad_end": [
     {
       "background_image": {
-        "src": "data/bg/大学.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -1058,7 +1282,23 @@
         {
           "text": {
             "ja": "卒業式が終わる。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {

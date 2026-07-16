@@ -1,7 +1,7 @@
 {
   "parameters": {
     "title": "教授Galgame",
-    "launch_story": "ch1_scene1",
+    "launch_story": "ch1_title",
     "languares": [
       "ja"
     ],
@@ -100,12 +100,12 @@
       }
     ],
     "variables": {
-      "favorability_oka": 0,
-      "favorability_arai": 0,
+      "favorability_okano": 0,
+      "favorability_araki": 0,
       "favorability_goto": 0,
       "route": 0,
-      "quiz_oka_correct": 0,
-      "quiz_arai_correct": 0,
+      "quiz_okano_correct": 0,
+      "quiz_araki_correct": 0,
       "quiz_goto_correct": 0,
       "goto_love_gate": 0
     },
@@ -116,17 +116,29 @@
       "char_takahashi": {
         "ja": "高橋"
       },
-      "char_oka": {
-        "ja": "岡教授"
+      "char_okano": {
+        "ja": "岡野教授"
       },
-      "char_arai": {
-        "ja": "荒井教授"
+      "char_araki": {
+        "ja": "荒木教授"
       },
       "char_goto": {
         "ja": "五島教授"
       }
     },
-    "sounds": {},
+    "sounds": {
+      "quiz_correct": "data/sound/クイズ正解音.mp3",
+      "quiz_wrong": "data/sound/クイズハズレ音.mp3",
+      "button_confirm": "data/sound/ボタン決定音.mp3",
+      "door_open": "data/sound/ドア開ける音.mp3",
+      "scream": "data/sound/キャー効果音.mp3",
+      "shock": "data/sound/ガーン.mp3",
+      "ominous": "data/sound/不穏.mp3",
+      "sell": "data/sound/物を売る音.mp3",
+      "continue": "data/sound/コンティニュー時.mp3",
+      "crowd": "data/sound/人混み、話し声.mp3",
+      "run": "data/sound/走る移動音.mp3"
+    },
     "cursors": {},
     "font_files": {}
   },
@@ -179,7 +191,7 @@
       "block",
       false
     ],
-    "ch1_scene4_return_oka": [
+    "ch1_scene4_return_okano": [
       "400px",
       "700px",
       "block",
@@ -197,127 +209,127 @@
       "block",
       false
     ],
-    "ch1_scene4_return_arai": [
+    "ch1_scene4_return_araki": [
       "1300px",
       "700px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q1": [
+    "ch1_quiz_okano_q1": [
       "1000px",
       "100px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q1_correct": [
+    "ch1_quiz_okano_q1_correct": [
       "1000px",
       "240px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q1_wrong": [
+    "ch1_quiz_okano_q1_wrong": [
       "1000px",
       "380px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q2": [
+    "ch1_quiz_okano_q2": [
       "1000px",
       "520px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q2_correct": [
+    "ch1_quiz_okano_q2_correct": [
       "1000px",
       "660px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q2_wrong": [
+    "ch1_quiz_okano_q2_wrong": [
       "1000px",
       "800px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q3": [
+    "ch1_quiz_okano_q3": [
       "1280px",
       "100px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q3_correct": [
+    "ch1_quiz_okano_q3_correct": [
       "1280px",
       "240px",
       "block",
       false
     ],
-    "ch1_quiz_oka_q3_wrong": [
+    "ch1_quiz_okano_q3_wrong": [
       "1280px",
       "380px",
       "block",
       false
     ],
-    "ch1_quiz_oka_result": [
+    "ch1_quiz_okano_result": [
       "1280px",
       "520px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q1": [
+    "ch1_quiz_araki_q1": [
       "1280px",
       "660px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q1_correct": [
+    "ch1_quiz_araki_q1_correct": [
       "1280px",
       "800px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q1_wrong": [
+    "ch1_quiz_araki_q1_wrong": [
       "1560px",
       "100px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q2": [
+    "ch1_quiz_araki_q2": [
       "1560px",
       "240px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q2_correct": [
+    "ch1_quiz_araki_q2_correct": [
       "1560px",
       "380px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q2_wrong": [
+    "ch1_quiz_araki_q2_wrong": [
       "1560px",
       "520px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q3": [
+    "ch1_quiz_araki_q3": [
       "1560px",
       "660px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q3_correct": [
+    "ch1_quiz_araki_q3_correct": [
       "1560px",
       "800px",
       "block",
       false
     ],
-    "ch1_quiz_arai_q3_wrong": [
+    "ch1_quiz_araki_q3_wrong": [
       "1840px",
       "100px",
       "block",
       false
     ],
-    "ch1_quiz_arai_result": [
+    "ch1_quiz_araki_result": [
       "1840px",
       "240px",
       "block",
@@ -328,12 +340,18 @@
       "380px",
       "block",
       false
+    ],
+    "ch1_title": [
+      "100px",
+      "0px",
+      "block",
+      false
     ]
   },
   "ch1_scene1": [
     {
       "background_image": {
-        "src": "data/bg/通学路.png",
+        "src": "data/bg/入学式.jpg",
         "size": [
           "100%",
           "100%"
@@ -343,7 +361,9 @@
         {
           "text": {
             "ja": "４月。主人公は✕✕✕大学に入学する。"
-          }
+          },
+          "art": [],
+          "sound": "crowd"
         },
         {
           "text": {
@@ -393,9 +413,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -409,7 +427,7 @@
   "ch1_scene2": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -420,7 +438,23 @@
           "text": {
             "ja": "では授業を始めます。今日の出席は---"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -461,9 +495,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -491,9 +523,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -521,9 +551,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -537,7 +565,7 @@
   "ch1_scene2_ask": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -548,7 +576,23 @@
           "text": {
             "ja": "どうした。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -560,7 +604,7 @@
           "text": {
             "ja": "質問は歓迎だ。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "choice": [
@@ -586,16 +630,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
@@ -609,7 +651,7 @@
   "ch1_scene2_home": [
     {
       "background_image": {
-        "src": "data/bg/帰り道.png",
+        "src": "data/bg/帰り道.jpg",
         "size": [
           "100%",
           "100%"
@@ -619,7 +661,12 @@
         {
           "text": {
             "ja": "「キャーーーーーー！！」"
-          }
+          },
+          "art": [],
+          "sound": [
+            "scream",
+            "run"
+          ]
         },
         {
           "text": {
@@ -640,7 +687,8 @@
         {
           "text": {
             "ja": "《Wエンド》死亡"
-          }
+          },
+          "sound": "continue"
         }
       ]
     }
@@ -648,7 +696,7 @@
   "ch1_scene2_snack": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -658,7 +706,8 @@
         {
           "text": {
             "ja": "コンビニでお菓子を買って帰った"
-          }
+          },
+          "art": []
         },
         {
           "choice": [
@@ -684,9 +733,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -700,7 +747,7 @@
   "ch1_scene3": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -710,18 +757,35 @@
         {
           "text": {
             "ja": "数日後。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "ドアが勢いよく開く。"
-          }
+          },
+          "sound": "door_open"
         },
         {
           "text": {
             "ja": "おはようございます！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -732,19 +796,19 @@
           "text": {
             "ja": "大学生活、不安な人もいると思います！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
             "ja": "勉強でも人間関係でも困ったら相談してください！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
             "ja": "皆さんが成長できるよう全力でサポートします！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -761,7 +825,7 @@
           "text": {
             "ja": "それではまた次回！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -790,9 +854,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -820,9 +882,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -836,7 +896,7 @@
   "ch1_scene3_greet": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -847,13 +907,29 @@
           "text": {
             "ja": "ありがとうございました。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "おう！こちらこそ来てくれてありがとう！！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -885,16 +961,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   2
                 ]
@@ -908,7 +982,7 @@
   "ch1_scene4": [
     {
       "background_image": {
-        "src": "data/bg/廊下.png",
+        "src": "data/bg/掲示板前の廊下.jpg",
         "size": [
           "100%",
           "100%"
@@ -917,9 +991,25 @@
       "dialogs": [
         {
           "text": {
-            "ja": "（あれ、これ岡教授の緑色のレーザーポインター...?）"
+            "ja": "（あれ、これ岡野教授の緑色のレーザーポインター...?）"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [
+            {
+              "url": "data/ex/レーザーポインタ.png",
+              "position": [
+                "30%",
+                0,
+                "35%",
+                0
+              ],
+              "size": [
+                "40%",
+                "30%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -933,7 +1023,7 @@
           },
           "choice": [
             {
-              "go_to": "ch1_scene4_return_oka",
+              "go_to": "ch1_scene4_return_okano",
               "position": [
                 "10%",
                 "10%",
@@ -947,16 +1037,14 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "岡教授に届ける"
+                "ja": "岡野教授に届ける"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -984,16 +1072,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_scene4_return_arai",
+              "go_to": "ch1_scene4_return_araki",
               "position": [
                 "10%",
                 "10%",
@@ -1007,16 +1093,14 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "荒井教授に渡す"
+                "ja": "荒木教授に渡す"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1027,10 +1111,10 @@
       ]
     }
   ],
-  "ch1_scene4_return_oka": [
+  "ch1_scene4_return_okano": [
     {
       "background_image": {
-        "src": "data/bg/廊下.png",
+        "src": "data/bg/掲示板前の廊下.jpg",
         "size": [
           "100%",
           "100%"
@@ -1041,7 +1125,23 @@
           "text": {
             "ja": "助かった、ありがとう。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1052,7 +1152,7 @@
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q1",
+              "go_to": "ch1_quiz_okano_q1",
               "position": [
                 "50%",
                 "0",
@@ -1073,16 +1173,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
@@ -1096,7 +1194,7 @@
   "ch1_scene4_steal": [
     {
       "background_image": {
-        "src": "data/bg/廊下.png",
+        "src": "data/bg/掲示板前の廊下.jpg",
         "size": [
           "100%",
           "100%"
@@ -1107,12 +1205,18 @@
           "text": {
             "ja": "...売っちゃお。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [],
+          "sound": [
+            "ominous",
+            "run"
+          ]
         },
         {
           "text": {
             "ja": "5000円を手に入れた"
-          }
+          },
+          "sound": "sell"
         },
         {
           "choice": [
@@ -1138,9 +1242,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1154,7 +1256,7 @@
   "ch1_scene4_steal_caught": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1164,13 +1266,30 @@
         {
           "text": {
             "ja": "翌日の授業後。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "防犯カメラを確認した。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "sound": "shock"
         },
         {
           "text": {
@@ -1186,15 +1305,16 @@
         {
           "text": {
             "ja": "《Cエンド》退学"
-          }
+          },
+          "sound": "continue"
         }
       ]
     }
   ],
-  "ch1_scene4_return_arai": [
+  "ch1_scene4_return_araki": [
     {
       "background_image": {
-        "src": "data/bg/廊下.png",
+        "src": "data/bg/掲示板前の廊下.jpg",
         "size": [
           "100%",
           "100%"
@@ -1205,13 +1325,29 @@
           "text": {
             "ja": "これ、落ちてました。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
-            "ja": "岡先生のじゃないか？"
+            "ja": "岡野先生のじゃないか？"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -1223,12 +1359,12 @@
           "text": {
             "ja": "あとで私から渡しておくよ！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q1",
+              "go_to": "ch1_quiz_okano_q1",
               "position": [
                 "50%",
                 "0",
@@ -1249,21 +1385,19 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   1
                 ],
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   1
                 ]
@@ -1274,10 +1408,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q1": [
+  "ch1_quiz_okano_q1": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1286,13 +1420,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【岡教授の小テスト　第1問】\n「人間機械系（Man Machine System）」における基本的な考え方として、最も適切なものはどれか。"
-          }
+            "ja": "【岡野教授の小テスト　第1問】\n「人間機械系（Man Machine System）」における基本的な考え方として、最も適切なものはどれか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q1_wrong",
+              "go_to": "ch1_quiz_okano_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1313,16 +1463,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q1_wrong",
+              "go_to": "ch1_quiz_okano_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1343,16 +1491,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q1_wrong",
+              "go_to": "ch1_quiz_okano_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1373,16 +1519,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q1_correct",
+              "go_to": "ch1_quiz_okano_q1_correct",
               "position": [
                 "10%",
                 "10%",
@@ -1403,21 +1547,19 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ],
                 [
-                  "quiz_oka_correct",
+                  "quiz_okano_correct",
                   "add",
                   1
                 ]
@@ -1428,10 +1570,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q1_correct": [
+  "ch1_quiz_okano_q1_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1441,12 +1583,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q2",
+              "go_to": "ch1_quiz_okano_q2",
               "position": [
                 "50%",
                 "0",
@@ -1467,9 +1626,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1480,10 +1637,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q1_wrong": [
+  "ch1_quiz_okano_q1_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1493,12 +1650,29 @@
         {
           "text": {
             "ja": "不正解…正解はDでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q2",
+              "go_to": "ch1_quiz_okano_q2",
               "position": [
                 "50%",
                 "0",
@@ -1519,9 +1693,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1532,10 +1704,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q2": [
+  "ch1_quiz_okano_q2": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1544,13 +1716,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【岡教授の小テスト　第2問】\n「インタフェース」の説明として、最も適切なものはどれか。"
-          }
+            "ja": "【岡野教授の小テスト　第2問】\n「インタフェース」の説明として、最も適切なものはどれか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q2_wrong",
+              "go_to": "ch1_quiz_okano_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1571,16 +1759,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q2_wrong",
+              "go_to": "ch1_quiz_okano_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1601,16 +1787,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q2_wrong",
+              "go_to": "ch1_quiz_okano_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1631,16 +1815,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q2_correct",
+              "go_to": "ch1_quiz_okano_q2_correct",
               "position": [
                 "10%",
                 "10%",
@@ -1661,21 +1843,19 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ],
                 [
-                  "quiz_oka_correct",
+                  "quiz_okano_correct",
                   "add",
                   1
                 ]
@@ -1686,10 +1866,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q2_correct": [
+  "ch1_quiz_okano_q2_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1699,12 +1879,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q3",
+              "go_to": "ch1_quiz_okano_q3",
               "position": [
                 "50%",
                 "0",
@@ -1725,9 +1922,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1738,10 +1933,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q2_wrong": [
+  "ch1_quiz_okano_q2_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1751,12 +1946,29 @@
         {
           "text": {
             "ja": "不正解…正解はDでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q3",
+              "go_to": "ch1_quiz_okano_q3",
               "position": [
                 "50%",
                 "0",
@@ -1777,9 +1989,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1790,10 +2000,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q3": [
+  "ch1_quiz_okano_q3": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1802,13 +2012,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【岡教授の小テスト　第3問】\n「ユニバーサルデザイン」の基本的な考え方として最も適切なものはどれか。"
-          }
+            "ja": "【岡野教授の小テスト　第3問】\n「ユニバーサルデザイン」の基本的な考え方として最も適切なものはどれか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_q3_wrong",
+              "go_to": "ch1_quiz_okano_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1829,16 +2055,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q3_wrong",
+              "go_to": "ch1_quiz_okano_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1859,16 +2083,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q3_correct",
+              "go_to": "ch1_quiz_okano_q3_correct",
               "position": [
                 "10%",
                 "10%",
@@ -1889,28 +2111,26 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ],
                 [
-                  "quiz_oka_correct",
+                  "quiz_okano_correct",
                   "add",
                   1
                 ]
               ]
             },
             {
-              "go_to": "ch1_quiz_oka_q3_wrong",
+              "go_to": "ch1_quiz_okano_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -1931,9 +2151,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1944,10 +2162,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q3_correct": [
+  "ch1_quiz_okano_q3_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1957,12 +2175,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_result",
+              "go_to": "ch1_quiz_okano_result",
               "position": [
                 "50%",
                 "0",
@@ -1983,9 +2218,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1996,10 +2229,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_q3_wrong": [
+  "ch1_quiz_okano_q3_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2009,12 +2242,29 @@
         {
           "text": {
             "ja": "不正解…正解はCでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_oka_result",
+              "go_to": "ch1_quiz_okano_result",
               "position": [
                 "50%",
                 "0",
@@ -2035,9 +2285,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2048,10 +2296,10 @@
       ]
     }
   ],
-  "ch1_quiz_oka_result": [
+  "ch1_quiz_okano_result": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2061,26 +2309,27 @@
         {
           "legacy_choice": [
             [
-              "quiz_oka_correct",
+              "quiz_okano_correct",
               ">",
               0,
-              "ch1_quiz_arai_q1"
+              "ch1_quiz_araki_q1"
             ],
             [
-              "quiz_oka_correct",
+              "quiz_okano_correct",
               ">",
               -1000,
               "ch1_quiz_fail_end"
             ]
-          ]
+          ],
+          "art": []
         }
       ]
     }
   ],
-  "ch1_quiz_arai_q1": [
+  "ch1_quiz_araki_q1": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2089,13 +2338,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【荒井教授の小テスト　第1問】\n信号 S[n]=−8cos(2π・5/24・n) を N=24点でDFTしたとき、実部XR[k]のインパルスの高さとして正しいものはどれか。"
-          }
+            "ja": "【荒木教授の小テスト　第1問】\n信号 S[n]=−8cos(2π・5/24・n) を N=24点でDFTしたとき、実部XR[k]のインパルスの高さとして正しいものはどれか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q1_wrong",
+              "go_to": "ch1_quiz_araki_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2116,16 +2381,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q1_correct",
+              "go_to": "ch1_quiz_araki_q1_correct",
               "position": [
                 "10%",
                 "10%",
@@ -2146,28 +2409,26 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ],
                 [
-                  "quiz_arai_correct",
+                  "quiz_araki_correct",
                   "add",
                   1
                 ]
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q1_wrong",
+              "go_to": "ch1_quiz_araki_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2188,16 +2449,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q1_wrong",
+              "go_to": "ch1_quiz_araki_q1_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2218,9 +2477,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2231,10 +2488,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q1_correct": [
+  "ch1_quiz_araki_q1_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2244,12 +2501,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q2",
+              "go_to": "ch1_quiz_araki_q2",
               "position": [
                 "50%",
                 "0",
@@ -2270,9 +2544,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2283,10 +2555,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q1_wrong": [
+  "ch1_quiz_araki_q1_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2296,12 +2568,29 @@
         {
           "text": {
             "ja": "不正解…正解はBでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q2",
+              "go_to": "ch1_quiz_araki_q2",
               "position": [
                 "50%",
                 "0",
@@ -2322,9 +2611,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2335,10 +2622,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q2": [
+  "ch1_quiz_araki_q2": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2347,13 +2634,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【荒井教授の小テスト　第2問】\nf1=4000Hz の純音をサンプリング周波数fsでサンプリングした際、2000Hz の位置にエイリアシングが観測されました。このときの fsはいくらか。"
-          }
+            "ja": "【荒木教授の小テスト　第2問】\nf1=4000Hz の純音をサンプリング周波数fsでサンプリングした際、2000Hz の位置にエイリアシングが観測されました。このときの fsはいくらか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q2_wrong",
+              "go_to": "ch1_quiz_araki_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2374,16 +2677,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q2_wrong",
+              "go_to": "ch1_quiz_araki_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2404,16 +2705,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q2_correct",
+              "go_to": "ch1_quiz_araki_q2_correct",
               "position": [
                 "10%",
                 "10%",
@@ -2434,28 +2733,26 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ],
                 [
-                  "quiz_arai_correct",
+                  "quiz_araki_correct",
                   "add",
                   1
                 ]
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q2_wrong",
+              "go_to": "ch1_quiz_araki_q2_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2476,9 +2773,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2489,10 +2784,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q2_correct": [
+  "ch1_quiz_araki_q2_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2502,12 +2797,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q3",
+              "go_to": "ch1_quiz_araki_q3",
               "position": [
                 "50%",
                 "0",
@@ -2528,9 +2840,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2541,10 +2851,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q2_wrong": [
+  "ch1_quiz_araki_q2_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2554,12 +2864,29 @@
         {
           "text": {
             "ja": "不正解…正解はCでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q3",
+              "go_to": "ch1_quiz_araki_q3",
               "position": [
                 "50%",
                 "0",
@@ -2580,9 +2907,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2593,10 +2918,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q3": [
+  "ch1_quiz_araki_q3": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2605,13 +2930,29 @@
       "dialogs": [
         {
           "text": {
-            "ja": "【荒井教授の小テスト　第3問】\nN=72点のDFTにおいて、サンプリング周波数が fs=3600Hz のとき、周波数分解能 Δf はいくらになるか。"
-          }
+            "ja": "【荒木教授の小テスト　第3問】\nN=72点のDFTにおいて、サンプリング周波数が fs=3600Hz のとき、周波数分解能 Δf はいくらになるか。"
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_q3_correct",
+              "go_to": "ch1_quiz_araki_q3_correct",
               "position": [
                 "10%",
                 "10%",
@@ -2632,28 +2973,26 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ],
                 [
-                  "quiz_arai_correct",
+                  "quiz_araki_correct",
                   "add",
                   1
                 ]
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q3_wrong",
+              "go_to": "ch1_quiz_araki_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2674,16 +3013,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q3_wrong",
+              "go_to": "ch1_quiz_araki_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2704,16 +3041,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch1_quiz_arai_q3_wrong",
+              "go_to": "ch1_quiz_araki_q3_wrong",
               "position": [
                 "10%",
                 "10%",
@@ -2734,9 +3069,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2747,10 +3080,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q3_correct": [
+  "ch1_quiz_araki_q3_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2760,12 +3093,29 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_result",
+              "go_to": "ch1_quiz_araki_result",
               "position": [
                 "50%",
                 "0",
@@ -2786,9 +3136,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2799,10 +3147,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_q3_wrong": [
+  "ch1_quiz_araki_q3_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2812,12 +3160,29 @@
         {
           "text": {
             "ja": "不正解…正解はAでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
             {
-              "go_to": "ch1_quiz_arai_result",
+              "go_to": "ch1_quiz_araki_result",
               "position": [
                 "50%",
                 "0",
@@ -2838,9 +3203,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -2851,10 +3214,10 @@
       ]
     }
   ],
-  "ch1_quiz_arai_result": [
+  "ch1_quiz_araki_result": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2864,18 +3227,19 @@
         {
           "legacy_choice": [
             [
-              "quiz_arai_correct",
+              "quiz_araki_correct",
               ">",
               0,
               "ch2_scene1"
             ],
             [
-              "quiz_arai_correct",
+              "quiz_araki_correct",
               ">",
               -1000,
               "ch1_quiz_fail_end"
             ]
-          ]
+          ],
+          "art": []
         }
       ]
     }
@@ -2883,7 +3247,7 @@
   "ch1_quiz_fail_end": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -2893,7 +3257,9 @@
         {
           "text": {
             "ja": "小テストの結果があまりにも壊滅的だった。"
-          }
+          },
+          "art": [],
+          "sound": "shock"
         },
         {
           "text": {
@@ -2909,7 +3275,53 @@
         {
           "text": {
             "ja": "《Cエンド》退学"
-          }
+          },
+          "sound": "continue"
+        }
+      ]
+    }
+  ],
+  "ch1_title": [
+    {
+      "background_image": {
+        "src": "data/title/タイトル画面.png",
+        "size": [
+          "100%",
+          "100%"
+        ]
+      },
+      "dialogs": [
+        {
+          "choice": [
+            {
+              "go_to": "ch1_scene1",
+              "position": [
+                "50%",
+                "0",
+                "50%",
+                "0"
+              ],
+              "size": [
+                0,
+                0
+              ],
+              "color": "rgba(242,242,242,0.7)",
+              "color_text": "#000",
+              "text": {
+                "ja": "はじめる"
+              },
+              "indent_text": "12px",
+              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
+              "art": {
+                "ja": ""
+              },
+              "sound": "button_confirm",
+              "hotspot": [
+                "0%",
+                "0%"
+              ]
+            }
+          ]
         }
       ]
     }

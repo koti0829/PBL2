@@ -100,12 +100,12 @@
       }
     ],
     "variables": {
-      "favorability_oka": 0,
-      "favorability_arai": 0,
+      "favorability_okano": 0,
+      "favorability_araki": 0,
       "favorability_goto": 0,
       "route": 0,
-      "quiz_oka_correct": 0,
-      "quiz_arai_correct": 0,
+      "quiz_okano_correct": 0,
+      "quiz_araki_correct": 0,
       "quiz_goto_correct": 0,
       "goto_love_gate": 0
     },
@@ -116,17 +116,29 @@
       "char_takahashi": {
         "ja": "高橋"
       },
-      "char_oka": {
-        "ja": "岡教授"
+      "char_okano": {
+        "ja": "岡野教授"
       },
-      "char_arai": {
-        "ja": "荒井教授"
+      "char_araki": {
+        "ja": "荒木教授"
       },
       "char_goto": {
         "ja": "五島教授"
       }
     },
-    "sounds": {},
+    "sounds": {
+      "quiz_correct": "data/sound/クイズ正解音.mp3",
+      "quiz_wrong": "data/sound/クイズハズレ音.mp3",
+      "button_confirm": "data/sound/ボタン決定音.mp3",
+      "door_open": "data/sound/ドア開ける音.mp3",
+      "scream": "data/sound/キャー効果音.mp3",
+      "shock": "data/sound/ガーン.mp3",
+      "ominous": "data/sound/不穏.mp3",
+      "sell": "data/sound/物を売る音.mp3",
+      "continue": "data/sound/コンティニュー時.mp3",
+      "crowd": "data/sound/人混み、話し声.mp3",
+      "run": "data/sound/走る移動音.mp3"
+    },
     "cursors": {},
     "font_files": {}
   },
@@ -249,7 +261,7 @@
   "ch2_scene1": [
     {
       "background_image": {
-        "src": "data/bg/キャンパス.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -259,7 +271,8 @@
         {
           "text": {
             "ja": "４月"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -315,9 +328,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -331,7 +342,7 @@
   "ch2_scene2": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -341,7 +352,23 @@
         {
           "text": {
             "ja": "教室のドアが静かに開く。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -398,9 +425,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -428,9 +453,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -444,7 +467,7 @@
   "ch2_scene2_greet": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -455,7 +478,23 @@
           "text": {
             "ja": "ありがとうございました。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -487,9 +526,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -510,7 +547,7 @@
   "ch2_scene3": [
     {
       "background_image": {
-        "src": "data/bg/研究棟前.png",
+        "src": "data/bg/7号館_外2.jpg",
         "size": [
           "100%",
           "100%"
@@ -521,7 +558,8 @@
           "text": {
             "ja": "この建物初めて来たな。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
@@ -555,9 +593,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -585,9 +621,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -601,7 +635,7 @@
   "ch2_scene3_carry": [
     {
       "background_image": {
-        "src": "data/bg/研究棟前.png",
+        "src": "data/bg/7号館_外2.jpg",
         "size": [
           "100%",
           "100%"
@@ -612,7 +646,23 @@
           "text": {
             "ja": "ありがとう。助かる。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -638,9 +688,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -661,7 +709,7 @@
   "ch2_scene3_bow": [
     {
       "background_image": {
-        "src": "data/bg/研究棟前.png",
+        "src": "data/bg/7号館_外2.jpg",
         "size": [
           "100%",
           "100%"
@@ -672,7 +720,23 @@
           "text": {
             "ja": "こんにちは。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -698,9 +762,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -721,7 +783,7 @@
   "ch2_scene4": [
     {
       "background_image": {
-        "src": "data/bg/図書館.png",
+        "src": "data/bg/図書館.jpg",
         "size": [
           "100%",
           "100%"
@@ -731,7 +793,8 @@
         {
           "text": {
             "ja": "レポート作成中。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -753,23 +816,21 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "岡教授おすすめの本を借りる"
+                "ja": "岡野教授おすすめの本を借りる"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
@@ -790,23 +851,21 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "荒井教授おすすめの本を借りる"
+                "ja": "荒木教授おすすめの本を借りる"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   2
                 ]
@@ -834,9 +893,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -857,7 +914,7 @@
   "ch2_scene5": [
     {
       "background_image": {
-        "src": "data/bg/研究室前.png",
+        "src": "data/bg/7号館_外2.jpg",
         "size": [
           "100%",
           "100%"
@@ -868,7 +925,8 @@
           "text": {
             "ja": "そろそろ研究室も考えないとな。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
@@ -895,23 +953,21 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "岡教授に相談"
+                "ja": "岡野教授に相談"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ]
@@ -932,23 +988,21 @@
               "color": "rgba(242,242,242,0.7)",
               "color_text": "#000",
               "text": {
-                "ja": "荒井教授に相談"
+                "ja": "荒木教授に相談"
               },
               "indent_text": "12px",
               "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ]
@@ -976,9 +1030,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -999,7 +1051,7 @@
   "ch2_scene6": [
     {
       "background_image": {
-        "src": "data/bg/キャンパス.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -1010,7 +1062,8 @@
           "text": {
             "ja": "来年はいよいよ研究室選びだな。"
           },
-          "name": "char_takahashi"
+          "name": "char_takahashi",
+          "art": []
         },
         {
           "text": {
@@ -1025,12 +1078,12 @@
         },
         {
           "text": {
-            "ja": "岡教授　♥♥♥♡♡"
+            "ja": "岡野教授　♥♥♥♡♡"
           }
         },
         {
           "text": {
-            "ja": "荒井教授　♥♥♥♥♡"
+            "ja": "荒木教授　♥♥♥♥♡"
           }
         },
         {
@@ -1068,9 +1121,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1084,7 +1135,7 @@
   "ch2_quiz_goto_q1": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1094,7 +1145,23 @@
         {
           "text": {
             "ja": "【五島教授の小テスト　第1問】\n1929年の創立当初、本学はどのような名称だったか。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -1120,9 +1187,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1150,9 +1215,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1192,9 +1255,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1222,9 +1283,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1238,7 +1297,7 @@
   "ch2_quiz_goto_q1_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1248,7 +1307,24 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
@@ -1274,9 +1350,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1290,7 +1364,7 @@
   "ch2_quiz_goto_q1_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1300,7 +1374,24 @@
         {
           "text": {
             "ja": "不正解…正解はBでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
@@ -1326,9 +1417,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1342,7 +1431,7 @@
   "ch2_quiz_goto_q2": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1352,7 +1441,23 @@
         {
           "text": {
             "ja": "【五島教授の小テスト　第2問】\n東京都市大学を運営する学校法人の名称は何か。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -1378,9 +1483,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1420,9 +1523,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1450,9 +1551,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1480,9 +1579,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1496,7 +1593,7 @@
   "ch2_quiz_goto_q2_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1506,7 +1603,24 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
@@ -1532,9 +1646,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1548,7 +1660,7 @@
   "ch2_quiz_goto_q2_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1558,7 +1670,24 @@
         {
           "text": {
             "ja": "不正解…正解はAでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
@@ -1584,9 +1713,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1600,7 +1727,7 @@
   "ch2_quiz_goto_q3": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1610,7 +1737,23 @@
         {
           "text": {
             "ja": "【五島教授の小テスト　第3問】\n2009年の「東京都市大学」への改組に際して、統合された教育機関はどこか。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -1636,9 +1779,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1666,9 +1807,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1696,9 +1835,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1726,9 +1863,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1754,7 +1889,7 @@
   "ch2_quiz_goto_q3_correct": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1764,7 +1899,24 @@
         {
           "text": {
             "ja": "正解！"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_correct"
         },
         {
           "choice": [
@@ -1790,9 +1942,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1806,7 +1956,7 @@
   "ch2_quiz_goto_q3_wrong": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1816,7 +1966,24 @@
         {
           "text": {
             "ja": "不正解…正解はDでした。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ],
+          "sound": "quiz_wrong"
         },
         {
           "choice": [
@@ -1842,9 +2009,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1858,7 +2023,7 @@
   "ch2_quiz_goto_result": [
     {
       "background_image": {
-        "src": "data/bg/教室.png",
+        "src": "data/bg/7号館_中.jpg",
         "size": [
           "100%",
           "100%"
@@ -1879,7 +2044,8 @@
               -1000,
               "ch1_quiz_fail_end"
             ]
-          ]
+          ],
+          "art": []
         }
       ]
     }

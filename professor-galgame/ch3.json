@@ -100,12 +100,12 @@
       }
     ],
     "variables": {
-      "favorability_oka": 0,
-      "favorability_arai": 0,
+      "favorability_okano": 0,
+      "favorability_araki": 0,
       "favorability_goto": 0,
       "route": 0,
-      "quiz_oka_correct": 0,
-      "quiz_arai_correct": 0,
+      "quiz_okano_correct": 0,
+      "quiz_araki_correct": 0,
       "quiz_goto_correct": 0,
       "goto_love_gate": 0
     },
@@ -116,17 +116,29 @@
       "char_takahashi": {
         "ja": "高橋"
       },
-      "char_oka": {
-        "ja": "岡教授"
+      "char_okano": {
+        "ja": "岡野教授"
       },
-      "char_arai": {
-        "ja": "荒井教授"
+      "char_araki": {
+        "ja": "荒木教授"
       },
       "char_goto": {
         "ja": "五島教授"
       }
     },
-    "sounds": {},
+    "sounds": {
+      "quiz_correct": "data/sound/クイズ正解音.mp3",
+      "quiz_wrong": "data/sound/クイズハズレ音.mp3",
+      "button_confirm": "data/sound/ボタン決定音.mp3",
+      "door_open": "data/sound/ドア開ける音.mp3",
+      "scream": "data/sound/キャー効果音.mp3",
+      "shock": "data/sound/ガーン.mp3",
+      "ominous": "data/sound/不穏.mp3",
+      "sell": "data/sound/物を売る音.mp3",
+      "continue": "data/sound/コンティニュー時.mp3",
+      "crowd": "data/sound/人混み、話し声.mp3",
+      "run": "data/sound/走る移動音.mp3"
+    },
     "cursors": {},
     "font_files": {}
   },
@@ -137,97 +149,97 @@
       "block",
       false
     ],
-    "ch3_oka_scene2": [
+    "ch3_okano_scene2": [
       "100px",
       "300px",
       "block",
       false
     ],
-    "ch3_oka_scene3": [
+    "ch3_okano_scene3": [
       "100px",
       "500px",
       "block",
       false
     ],
-    "ch3_oka_scene3_try": [
+    "ch3_okano_scene3_try": [
       "400px",
       "500px",
       "block",
       false
     ],
-    "ch3_oka_scene4": [
+    "ch3_okano_scene4": [
       "100px",
       "700px",
       "block",
       false
     ],
-    "ch3_oka_scene5": [
+    "ch3_okano_scene5": [
       "100px",
       "900px",
       "block",
       false
     ],
-    "ch3_oka_scene6": [
+    "ch3_okano_scene6": [
       "100px",
       "1100px",
       "block",
       false
     ],
-    "ch3_oka_scene7": [
+    "ch3_okano_scene7": [
       "100px",
       "1300px",
       "block",
       false
     ],
-    "ch3_arai_scene2": [
+    "ch3_araki_scene2": [
       "500px",
       "300px",
       "block",
       false
     ],
-    "ch3_arai_scene3": [
+    "ch3_araki_scene3": [
       "500px",
       "500px",
       "block",
       false
     ],
-    "ch3_arai_scene3_try": [
+    "ch3_araki_scene3_try": [
       "800px",
       "500px",
       "block",
       false
     ],
-    "ch3_arai_scene4": [
+    "ch3_araki_scene4": [
       "500px",
       "700px",
       "block",
       false
     ],
-    "ch3_arai_scene5": [
+    "ch3_araki_scene5": [
       "500px",
       "900px",
       "block",
       false
     ],
-    "ch3_arai_scene6": [
+    "ch3_araki_scene6": [
       "500px",
       "1100px",
       "block",
       false
     ],
-    "ch3_arai_scene6_help": [
+    "ch3_araki_scene6_help": [
       "800px",
       "1100px",
       "block",
       false
     ],
-    "ch3_arai_scene6_leave": [
+    "ch3_araki_scene6_leave": [
       "1100px",
       "1100px",
       "block",
       false
     ],
-    "ch3_arai_scene7": [
+    "ch3_araki_scene7": [
       "500px",
       "1300px",
       "block",
@@ -279,7 +291,7 @@
   "ch3_scene1": [
     {
       "background_image": {
-        "src": "data/bg/掲示板.png",
+        "src": "data/bg/掲示板.jpg",
         "size": [
           "100%",
           "100%"
@@ -289,7 +301,9 @@
         {
           "text": {
             "ja": "研究室配属の日。"
-          }
+          },
+          "art": [],
+          "sound": "crowd"
         },
         {
           "text": {
@@ -314,7 +328,7 @@
           }
         },
         {
-          "js": "story_json.parameters.variables.route=(function(){var vals=[['oka',story_json.parameters.variables.favorability_oka],['arai',story_json.parameters.variables.favorability_arai],['goto',story_json.parameters.variables.favorability_goto]];vals.sort(function(a,b){return b[1]-a[1];});var top=vals[0][0];return (top=='goto')?2:((top=='arai')?1:0);})();"
+          "js": "story_json.parameters.variables.route=(function(){var vals=[['okano',story_json.parameters.variables.favorability_okano],['araki',story_json.parameters.variables.favorability_araki],['goto',story_json.parameters.variables.favorability_goto]];vals.sort(function(a,b){return b[1]-a[1];});var top=vals[0][0];return (top=='goto')?2:((top=='araki')?1:0);})();"
         },
         {
           "legacy_choice": [
@@ -328,23 +342,23 @@
               "route",
               ">",
               0,
-              "ch3_arai_scene2"
+              "ch3_araki_scene2"
             ],
             [
               "route",
               ">",
               -1,
-              "ch3_oka_scene2"
+              "ch3_okano_scene2"
             ]
           ]
         }
       ]
     }
   ],
-  "ch3_oka_scene2": [
+  "ch3_okano_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -355,7 +369,23 @@
           "text": {
             "ja": "今日からよろしく。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -372,7 +402,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_oka_scene3",
+              "go_to": "ch3_okano_scene3",
               "position": [
                 "50%",
                 "0",
@@ -393,9 +423,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -406,10 +434,10 @@
       ]
     }
   ],
-  "ch3_oka_scene3": [
+  "ch3_okano_scene3": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -419,7 +447,8 @@
         {
           "text": {
             "ja": "研究が思うように進まない。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -427,7 +456,7 @@
           },
           "choice": [
             {
-              "go_to": "ch3_oka_scene3_try",
+              "go_to": "ch3_okano_scene3_try",
               "position": [
                 "10%",
                 "10%",
@@ -448,16 +477,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch3_oka_scene4",
+              "go_to": "ch3_okano_scene4",
               "position": [
                 "10%",
                 "10%",
@@ -478,9 +505,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -491,10 +516,10 @@
       ]
     }
   ],
-  "ch3_oka_scene3_try": [
+  "ch3_okano_scene3_try": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -505,12 +530,28 @@
           "text": {
             "ja": "その姿勢は評価している。"
           },
-          "name": "char_oka"
+          "name": "char_okano",
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch3_oka_scene4",
+              "go_to": "ch3_okano_scene4",
               "position": [
                 "50%",
                 "0",
@@ -531,16 +572,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ]
@@ -551,10 +590,10 @@
       ]
     }
   ],
-  "ch3_oka_scene4": [
+  "ch3_okano_scene4": [
     {
       "background_image": {
-        "src": "data/bg/大学.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -564,13 +603,29 @@
         {
           "text": {
             "ja": "研究室に主人公と教授だけが残っている。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武_デート時.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "休憩しよう。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -586,7 +641,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_oka_scene5",
+              "go_to": "ch3_okano_scene5",
               "position": [
                 "50%",
                 "0",
@@ -607,16 +662,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
@@ -627,10 +680,10 @@
       ]
     }
   ],
-  "ch3_oka_scene5": [
+  "ch3_okano_scene5": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -640,13 +693,29 @@
         {
           "text": {
             "ja": "発表資料を一緒に作る。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/岡野武.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "君がいて助かった。"
           },
-          "name": "char_oka"
+          "name": "char_okano"
         },
         {
           "text": {
@@ -657,7 +726,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_oka_scene6",
+              "go_to": "ch3_okano_scene6",
               "position": [
                 "50%",
                 "0",
@@ -678,16 +747,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   3
                 ]
@@ -698,10 +765,10 @@
       ]
     }
   ],
-  "ch3_oka_scene6": [
+  "ch3_okano_scene6": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -711,7 +778,8 @@
         {
           "text": {
             "ja": "研究室展示を二人で準備する。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -719,7 +787,7 @@
           },
           "choice": [
             {
-              "go_to": "ch3_oka_scene7",
+              "go_to": "ch3_okano_scene7",
               "position": [
                 "10%",
                 "10%",
@@ -740,23 +808,21 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   2
                 ]
               ]
             },
             {
-              "go_to": "ch3_oka_scene7",
+              "go_to": "ch3_okano_scene7",
               "position": [
                 "10%",
                 "10%",
@@ -777,16 +843,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_oka",
+                  "favorability_okano",
                   "add",
                   -5
                 ]
@@ -797,10 +861,10 @@
       ]
     }
   ],
-  "ch3_oka_scene7": [
+  "ch3_okano_scene7": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -811,12 +875,13 @@
           "text": {
             "ja": "（先生と過ごす時間が増えてから…なんだか毎日が楽しい。）"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "choice": [
             {
-              "go_to": "ch4_oka_scene1",
+              "go_to": "ch4_okano_scene1",
               "position": [
                 "50%",
                 "0",
@@ -837,9 +902,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -850,10 +913,10 @@
       ]
     }
   ],
-  "ch3_arai_scene2": [
+  "ch3_araki_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -864,7 +927,23 @@
           "text": {
             "ja": "今日からよろしくな！！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -876,7 +955,7 @@
           "text": {
             "ja": "困ったことがあったら何でも相談しろ！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -887,7 +966,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene3",
+              "go_to": "ch3_araki_scene3",
               "position": [
                 "50%",
                 "0",
@@ -908,9 +987,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -921,10 +998,10 @@
       ]
     }
   ],
-  "ch3_arai_scene3": [
+  "ch3_araki_scene3": [
     {
       "background_image": {
-        "src": "data/bg/実験室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -934,7 +1011,8 @@
         {
           "text": {
             "ja": "実験が思うように進まない。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -942,7 +1020,7 @@
           },
           "choice": [
             {
-              "go_to": "ch3_arai_scene3_try",
+              "go_to": "ch3_araki_scene3_try",
               "position": [
                 "10%",
                 "10%",
@@ -963,16 +1041,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch3_arai_scene4",
+              "go_to": "ch3_araki_scene4",
               "position": [
                 "10%",
                 "10%",
@@ -993,9 +1069,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1006,10 +1080,10 @@
       ]
     }
   ],
-  "ch3_arai_scene3_try": [
+  "ch3_araki_scene3_try": [
     {
       "background_image": {
-        "src": "data/bg/実験室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1020,12 +1094,28 @@
           "text": {
             "ja": "その粘り強さ、大事だぞ！！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene4",
+              "go_to": "ch3_araki_scene4",
               "position": [
                 "50%",
                 "0",
@@ -1046,16 +1136,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ]
@@ -1066,10 +1154,10 @@
       ]
     }
   ],
-  "ch3_arai_scene4": [
+  "ch3_araki_scene4": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1080,7 +1168,23 @@
           "text": {
             "ja": "暑いな！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1097,7 +1201,7 @@
           "text": {
             "ja": "熱中症には気を付けろよ！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -1108,7 +1212,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene5",
+              "go_to": "ch3_araki_scene5",
               "position": [
                 "50%",
                 "0",
@@ -1129,16 +1233,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   2
                 ]
@@ -1149,10 +1251,10 @@
       ]
     }
   ],
-  "ch3_arai_scene5": [
+  "ch3_araki_scene5": [
     {
       "background_image": {
-        "src": "data/bg/大学.png",
+        "src": "data/bg/3号館.jpg",
         "size": [
           "100%",
           "100%"
@@ -1162,13 +1264,29 @@
         {
           "text": {
             "ja": "高校生向けイベントを一緒に手伝う。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "君は説明が上手だな！"
           },
-          "name": "char_arai"
+          "name": "char_araki"
         },
         {
           "text": {
@@ -1179,7 +1297,7 @@
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene6",
+              "go_to": "ch3_araki_scene6",
               "position": [
                 "50%",
                 "0",
@@ -1200,16 +1318,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   3
                 ]
@@ -1220,10 +1336,10 @@
       ]
     }
   ],
-  "ch3_arai_scene6": [
+  "ch3_araki_scene6": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1233,7 +1349,8 @@
         {
           "text": {
             "ja": "展示の準備をする。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -1241,7 +1358,7 @@
           },
           "choice": [
             {
-              "go_to": "ch3_arai_scene6_help",
+              "go_to": "ch3_araki_scene6_help",
               "position": [
                 "10%",
                 "10%",
@@ -1262,16 +1379,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ]
             },
             {
-              "go_to": "ch3_arai_scene6_leave",
+              "go_to": "ch3_araki_scene6_leave",
               "position": [
                 "10%",
                 "10%",
@@ -1292,9 +1407,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1305,10 +1418,10 @@
       ]
     }
   ],
-  "ch3_arai_scene6_help": [
+  "ch3_araki_scene6_help": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1319,12 +1432,28 @@
           "text": {
             "ja": "本当に助かった！"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene7",
+              "go_to": "ch3_araki_scene7",
               "position": [
                 "50%",
                 "0",
@@ -1345,16 +1474,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   2
                 ]
@@ -1365,10 +1492,10 @@
       ]
     }
   ],
-  "ch3_arai_scene6_leave": [
+  "ch3_araki_scene6_leave": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1379,12 +1506,28 @@
           "text": {
             "ja": "残念だな…。"
           },
-          "name": "char_arai"
+          "name": "char_araki",
+          "art": [
+            {
+              "url": "data/chara/荒木周斗.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
             {
-              "go_to": "ch3_arai_scene7",
+              "go_to": "ch3_araki_scene7",
               "position": [
                 "50%",
                 "0",
@@ -1405,16 +1548,14 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
               ],
               "variables": [
                 [
-                  "favorability_arai",
+                  "favorability_araki",
                   "add",
                   -5
                 ]
@@ -1425,10 +1566,10 @@
       ]
     }
   ],
-  "ch3_arai_scene7": [
+  "ch3_araki_scene7": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1439,12 +1580,13 @@
           "text": {
             "ja": "（先生の笑顔を見ると元気が出る。）"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "choice": [
             {
-              "go_to": "ch4_arai_scene1",
+              "go_to": "ch4_araki_scene1",
               "position": [
                 "50%",
                 "0",
@@ -1465,9 +1607,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1481,7 +1621,7 @@
   "ch3_goto_scene2": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1492,7 +1632,23 @@
           "text": {
             "ja": "……よろしく。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1530,9 +1686,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1546,7 +1700,7 @@
   "ch3_goto_scene3": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1556,7 +1710,8 @@
         {
           "text": {
             "ja": "研究が思うように進まない。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -1585,9 +1740,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1615,9 +1768,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1631,7 +1782,7 @@
   "ch3_goto_scene3_try": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1642,7 +1793,23 @@
           "text": {
             "ja": "……悪くない。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "choice": [
@@ -1668,9 +1835,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1691,7 +1856,7 @@
   "ch3_goto_scene4": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1701,7 +1866,23 @@
         {
           "text": {
             "ja": "研究室に主人公と教授だけが残っている。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1744,9 +1925,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1767,7 +1946,7 @@
   "ch3_goto_scene5": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1777,7 +1956,23 @@
         {
           "text": {
             "ja": "発表資料を一緒に作る。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -1815,9 +2010,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1838,7 +2031,7 @@
   "ch3_goto_scene6": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1848,7 +2041,8 @@
         {
           "text": {
             "ja": "研究室展示を二人で準備する。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -1877,9 +2071,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1914,9 +2106,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"
@@ -1937,7 +2127,7 @@
   "ch3_goto_scene7": [
     {
       "background_image": {
-        "src": "data/bg/研究室.png",
+        "src": "data/bg/実験室.jpg",
         "size": [
           "100%",
           "100%"
@@ -1948,7 +2138,8 @@
           "text": {
             "ja": "（もっと先生のことを知りたい。）"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "choice": [
@@ -1974,9 +2165,7 @@
               "art": {
                 "ja": ""
               },
-              "sound": {
-                "ja": ""
-              },
+              "sound": "button_confirm",
               "hotspot": [
                 "0%",
                 "0%"

@@ -26,8 +26,8 @@
 |---|---|---|
 | 1年生編 | `ch1.json` | `ch1_scene*` |
 | 2年生編 | `ch2.json` | `ch2_scene*` |
-| 3年生編 | `ch3.json` | `ch3_scene*`（岡/荒井/五島ルートで`ch3_oka_*`/`ch3_arai_*`/`ch3_goto_*`） |
-| 4年生編 | `ch4.json` | `ch4_oka_*`/`ch4_arai_*`/`ch4_goto_*` |
+| 3年生編 | `ch3.json` | `ch3_scene*`（岡野/荒木/五島ルートで`ch3_okano_*`/`ch3_araki_*`/`ch3_goto_*`） |
+| 4年生編 | `ch4.json` | `ch4_okano_*`/`ch4_araki_*`/`ch4_goto_*` |
 
 （担当者の割り振りはチーム内で別途共有。ファイル名だけで担当範囲が一意に決まる。）
 
