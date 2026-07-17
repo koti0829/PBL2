@@ -30,24 +30,25 @@
     },
     "name_panel": {
       "size": [
-        "222px",
-        "48px"
+        0,
+        "40px"
       ],
       "position": [
+        "20px",
         "0",
-        "0",
-        "-48px",
+        "-40px",
         "0"
       ],
-      "indent_text": "8px",
+      "indent_text": "8px 20px",
       "size_text": "18px",
-      "color_text": "#000",
+      "color": "#2b2d42",
+      "color_text": "#ffffff",
       "align": [
-        "flex-start",
+        "center",
         "center"
       ],
       "font_family": "",
-      "color": ""
+      "style": "font-weight:700;border-radius:12px 12px 0 0;letter-spacing:0.05em;box-sizing:border-box;"
     },
     "buttons": [
       {
@@ -111,19 +112,29 @@
     },
     "characters": {
       "char_hero": {
-        "ja": "主人公"
+        "ja": "主人公",
+        "color": "#37474f",
+        "color_text": "#ffffff"
       },
       "char_takahashi": {
-        "ja": "高橋"
+        "ja": "高橋",
+        "color": "#e65100",
+        "color_text": "#ffffff"
       },
       "char_okano": {
-        "ja": "岡野教授"
+        "ja": "岡野教授",
+        "color": "#1565c0",
+        "color_text": "#ffffff"
       },
       "char_araki": {
-        "ja": "荒木教授"
+        "ja": "荒木教授",
+        "color": "#2e7d32",
+        "color_text": "#ffffff"
       },
       "char_goto": {
-        "ja": "五島教授"
+        "ja": "五島教授",
+        "color": "#6a1b9a",
+        "color_text": "#ffffff"
       }
     },
     "sounds": {
@@ -260,13 +271,7 @@
   },
   "ch2_scene1": [
     {
-      "background_image": {
-        "src": "data/bg/3号館.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/3号館.jpg",
       "dialogs": [
         {
           "text": {
@@ -278,80 +283,76 @@
           "text": {
             "ja": "もう２年生か。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
             "ja": "今年は専門科目が増えるな。"
           },
-          "name": "char_takahashi"
+          "name": "char_takahashi",
+          "art": []
         },
         {
           "text": {
             "ja": "そういえば五島教授の授業あるらしいぞ。"
           },
-          "name": "char_takahashi"
+          "name": "char_takahashi",
+          "art": []
         },
         {
           "text": {
             "ja": "どんな？"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
             "ja": "すごい人って有名らしい。"
           },
-          "name": "char_takahashi"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_scene2",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "name": "char_takahashi",
+          "go_to": "ch2_scene2",
+          "art": []
         }
       ]
     }
   ],
   "ch2_scene2": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
             "ja": "教室のドアが静かに開く。"
+          },
+          "art": []
+        },
+        {
+          "text": {
+            "ja": "……おはようございます。"
+          },
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
+        },
+        {
+          "text": {
+            "ja": "教室が静まり返る。"
           },
           "art": [
             {
@@ -372,31 +373,68 @@
         },
         {
           "text": {
-            "ja": "……おはようございます。"
-          },
-          "name": "char_goto"
-        },
-        {
-          "text": {
-            "ja": "教室が静まり返る。"
-          }
-        },
-        {
-          "text": {
             "ja": "担当する五島です。"
           },
-          "name": "char_goto"
+          "name": "char_goto",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "（なんだか独特な雰囲気だ。）"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
             "ja": "授業終了後。"
-          }
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         },
         {
           "text": {
@@ -459,26 +497,7 @@
                 "0%"
               ]
             }
-          ]
-        }
-      ]
-    }
-  ],
-  "ch2_scene2_greet": [
-    {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
-      "dialogs": [
-        {
-          "text": {
-            "ja": "ありがとうございました。"
-          },
-          "name": "char_hero",
+          ],
           "art": [
             {
               "url": "data/chara/五島慶太.png",
@@ -495,49 +514,41 @@
               "fit": "contain"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "ch2_scene2_greet": [
+    {
+      "background_image": "data/bg/7号館_中.jpg",
+      "dialogs": [
+        {
+          "text": {
+            "ja": "ありがとうございました。"
+          },
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
             "ja": "……こちらこそ。"
           },
-          "name": "char_goto"
-        },
-        {
-          "choice": [
+          "name": "char_goto",
+          "go_to": "ch2_scene3",
+          "art": [
             {
-              "go_to": "ch2_scene3",
+              "url": "data/chara/五島慶太.png",
               "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
+                "20%",
                 0,
+                "5%",
                 0
               ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
+              "size": [
+                "60%",
+                "90%"
               ],
-              "variables": [
-                [
-                  "favorability_goto",
-                  "add",
-                  2
-                ]
-              ]
+              "fit": "contain"
             }
           ]
         }
@@ -546,13 +557,7 @@
   ],
   "ch2_scene3": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_外2.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_外2.jpg",
       "dialogs": [
         {
           "text": {
@@ -564,7 +569,8 @@
         {
           "text": {
             "ja": "偶然、五島教授と会う。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -627,20 +633,15 @@
                 "0%"
               ]
             }
-          ]
+          ],
+          "art": []
         }
       ]
     }
   ],
   "ch2_scene3_carry": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_外2.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_外2.jpg",
       "dialogs": [
         {
           "text": {
@@ -662,59 +663,15 @@
               ],
               "fit": "contain"
             }
-          ]
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_scene4",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ],
-              "variables": [
-                [
-                  "favorability_goto",
-                  "add",
-                  2
-                ]
-              ]
-            }
-          ]
+          ],
+          "go_to": "ch2_scene4"
         }
       ]
     }
   ],
   "ch2_scene3_bow": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_外2.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_外2.jpg",
       "dialogs": [
         {
           "text": {
@@ -736,59 +693,15 @@
               ],
               "fit": "contain"
             }
-          ]
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_scene4",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ],
-              "variables": [
-                [
-                  "favorability_goto",
-                  "add",
-                  1
-                ]
-              ]
-            }
-          ]
+          ],
+          "go_to": "ch2_scene4"
         }
       ]
     }
   ],
   "ch2_scene4": [
     {
-      "background_image": {
-        "src": "data/bg/図書館.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/図書館.jpg",
       "dialogs": [
         {
           "text": {
@@ -906,21 +819,22 @@
                 ]
               ]
             }
-          ]
+          ],
+          "art": []
         }
       ]
     }
   ],
   "ch2_scene5": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_外2.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_外2.jpg",
       "dialogs": [
+        {
+          "text": {
+            "ja": "（現在の親密度　岡野教授：<favorability_okano>／荒木教授：<favorability_araki>／五島教授：<favorability_goto>）"
+          },
+          "art": []
+        },
         {
           "text": {
             "ja": "そろそろ研究室も考えないとな。"
@@ -931,7 +845,8 @@
         {
           "text": {
             "ja": "３人の教授と話す機会がある。"
-          }
+          },
+          "art": []
         },
         {
           "text": {
@@ -1043,21 +958,22 @@
                 ]
               ]
             }
-          ]
+          ],
+          "art": []
         }
       ]
     }
   ],
   "ch2_scene6": [
     {
-      "background_image": {
-        "src": "data/bg/3号館.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/3号館.jpg",
       "dialogs": [
+        {
+          "text": {
+            "ja": "（現在の親密度　岡野教授：<favorability_okano>／荒木教授：<favorability_araki>／五島教授：<favorability_goto>）"
+          },
+          "art": []
+        },
         {
           "text": {
             "ja": "来年はいよいよ研究室選びだな。"
@@ -1069,78 +985,47 @@
           "text": {
             "ja": "どこにしようかな……。"
           },
-          "name": "char_hero"
+          "name": "char_hero",
+          "art": []
         },
         {
           "text": {
             "ja": "（現在の好感度が表示される）"
-          }
+          },
+          "art": []
         },
         {
           "text": {
             "ja": "岡野教授　♥♥♥♡♡"
-          }
+          },
+          "art": []
         },
         {
           "text": {
             "ja": "荒木教授　♥♥♥♥♡"
-          }
+          },
+          "art": []
         },
         {
           "text": {
             "ja": "五島教授　♥♥♡♡♡"
-          }
+          },
+          "art": []
         },
         {
           "text": {
             "ja": "（来年の選択で進路が決まりそうだ……。）"
           },
-          "name": "char_hero"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_q1",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ（３年生編へ）"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "name": "char_hero",
+          "go_to": "ch2_quiz_goto_q1",
+          "art": []
         }
       ]
     }
   ],
   "ch2_quiz_goto_q1": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1289,6 +1174,22 @@
                 "0%"
               ]
             }
+          ],
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
           ]
         }
       ]
@@ -1296,13 +1197,7 @@
   ],
   "ch2_quiz_goto_q1_correct": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1324,52 +1219,15 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_correct"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_q2",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_correct",
+          "go_to": "ch2_quiz_goto_q2"
         }
       ]
     }
   ],
   "ch2_quiz_goto_q1_wrong": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1391,52 +1249,15 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_wrong"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_q2",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_wrong",
+          "go_to": "ch2_quiz_goto_q2"
         }
       ]
     }
   ],
   "ch2_quiz_goto_q2": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1585,6 +1406,22 @@
                 "0%"
               ]
             }
+          ],
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
           ]
         }
       ]
@@ -1592,13 +1429,7 @@
   ],
   "ch2_quiz_goto_q2_correct": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1620,52 +1451,15 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_correct"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_q3",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_correct",
+          "go_to": "ch2_quiz_goto_q3"
         }
       ]
     }
   ],
   "ch2_quiz_goto_q2_wrong": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1687,52 +1481,15 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_wrong"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_q3",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_wrong",
+          "go_to": "ch2_quiz_goto_q3"
         }
       ]
     }
   ],
   "ch2_quiz_goto_q3": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1881,6 +1638,22 @@
                 ]
               ]
             }
+          ],
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
           ]
         }
       ]
@@ -1888,13 +1661,7 @@
   ],
   "ch2_quiz_goto_q3_correct": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1916,52 +1683,15 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_correct"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_result",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_correct",
+          "go_to": "ch2_quiz_goto_result"
         }
       ]
     }
   ],
   "ch2_quiz_goto_q3_wrong": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
           "text": {
@@ -1983,70 +1713,53 @@
               "fit": "contain"
             }
           ],
-          "sound": "quiz_wrong"
-        },
-        {
-          "choice": [
-            {
-              "go_to": "ch2_quiz_goto_result",
-              "position": [
-                "50%",
-                "0",
-                "50%",
-                "0"
-              ],
-              "size": [
-                0,
-                0
-              ],
-              "color": "rgba(242,242,242,0.7)",
-              "color_text": "#000",
-              "text": {
-                "ja": "次へ"
-              },
-              "indent_text": "12px",
-              "style": "border-radius:16px;backdrop-filter:blur(12px);border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(0,0,0,.15);box-shadow: 0px 4px 14px rgba(0,0,0,.15);",
-              "art": {
-                "ja": ""
-              },
-              "sound": "button_confirm",
-              "hotspot": [
-                "0%",
-                "0%"
-              ]
-            }
-          ]
+          "sound": "quiz_wrong",
+          "go_to": "ch2_quiz_goto_result"
         }
       ]
     }
   ],
   "ch2_quiz_goto_result": [
     {
-      "background_image": {
-        "src": "data/bg/7号館_中.jpg",
-        "size": [
-          "100%",
-          "100%"
-        ]
-      },
+      "background_image": "data/bg/7号館_中.jpg",
       "dialogs": [
         {
-          "legacy_choice": [
-            [
-              "quiz_goto_correct",
-              ">",
-              0,
-              "ch3_scene1"
-            ],
-            [
-              "quiz_goto_correct",
-              ">",
-              -1000,
-              "ch1_quiz_fail_end"
-            ]
-          ],
-          "art": []
+          "text": {
+            "ja": "テスト結果：<quiz_goto_correct>問正解でした！\n五島教授との親密度：<favorability_goto>"
+          },
+          "art": [
+            {
+              "url": "data/chara/五島慶太.png",
+              "position": [
+                "20%",
+                0,
+                "5%",
+                0
+              ],
+              "size": [
+                "60%",
+                "90%"
+              ],
+              "fit": "contain"
+            }
+          ]
         }
+      ]
+    },
+    {
+      "legacy_choice": [
+        [
+          "quiz_goto_correct",
+          ">",
+          0,
+          "ch3_scene1"
+        ],
+        [
+          "quiz_goto_correct",
+          ">",
+          -1000,
+          "ch1_quiz_fail_end"
+        ]
       ]
     }
   ]
