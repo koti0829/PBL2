@@ -373,7 +373,8 @@
               ],
               "fit": "contain"
             }
-          ]
+          ],
+          "sound": "ominous"
         },
         {
           "text": {

@@ -3574,7 +3574,8 @@
               ],
               "fit": "contain"
             }
-          ]
+          ],
+          "sound": "ominous"
         },
         {
           "text": {
@@ -4978,7 +4979,8 @@
           "text": {
             "ja": "***ルート確定***"
           },
-          "art": []
+          "art": [],
+          "sound": "continue"
         },
         {
           "js": "story_json.parameters.variables.route=(function(){var vals=[['okano',story_json.parameters.variables.favorability_okano],['araki',story_json.parameters.variables.favorability_araki],['goto',story_json.parameters.variables.favorability_goto]];vals.sort(function(a,b){return b[1]-a[1];});var top=vals[0][0];return (top=='goto')?2:((top=='araki')?1:0);})();",
