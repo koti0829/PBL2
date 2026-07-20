@@ -7,7 +7,7 @@
     ],
     "autosave": false,
     "font": "Arial",
-    "font_size": "clamp(14px, 2.2vw, 22px)",
+    "font_size": "20px",
     "text_panel": {
       "size": [
         "95%",
@@ -17,7 +17,7 @@
       "color_text": "#000",
       "indent_text": "8px",
       "indent_bottom": "32px",
-      "size_text": "clamp(15px, 2.4vw, 24px)",
+      "size_text": "24px",
       "style": "border-radius:16px;",
       "dialog_speed": "10",
       "position": [
@@ -40,7 +40,7 @@
         "0"
       ],
       "indent_text": "8px 20px",
-      "size_text": "clamp(13px, 1.8vw, 19px)",
+      "size_text": "18px",
       "color": "#2b2d42",
       "color_text": "#ffffff",
       "align": [
