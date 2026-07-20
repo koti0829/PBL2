@@ -1,0 +1,7 @@
+# macOSが自動生成するゴミファイル
+.DS_Store
+
+# 完全1ファイル版HTML(約39MB)。画像も全てbase64で埋め込むため巨大になる。
+# 必要になったら生成し直せるのでリポジトリには含めない。
+# 配布は professor-galgame フォルダごとZIPして index.html を開いてもらう方式を推奨。
+professor-galgame/game_standalone.html
