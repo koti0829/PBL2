@@ -55,7 +55,8 @@ professor-galgame/          (ゲームのルートフォルダ)
 4. **作業終了時:** 変更した自分のJSONファイルと、新しく追加した画像などの素材をGitでGitHubに送る（Push）。
 
 ## 5. 最後の統合（ファイルを1つに合体させる手順）
-ゲームの全章が完成したら、テキストエディタ（VS Codeなど）を使用してバラバラのファイルを1つにドッキングする。
+
+以前は「テキストエディタで手作業コピペ」の運用だったが、現在は**スクリプトで自動化**している。`professor-galgame/tools/` に同梱。
 
 **注意:** Tuesday JSの実際のエクスポート形式は`"scenes": [...]`という配列ではない。実際は次のような構造になっている。
 
@@ -63,24 +64,58 @@ professor-galgame/          (ゲームのルートフォルダ)
 {
   "parameters": { "characters": {...}, "variables": {...}, "launch_story": "...", ... },
   "blocks": { "ブロック名": ["x座標", "y座標", "block", false], ... },
-  "ch1_scene1": [ { "background_image": {...}, "dialogs": [ ...ノード配列... ] } ],
+  "ch1_scene1": [ { "background_image": "data/bg/....jpg", "dialogs": [ ...ノード配列... ] } ],
   "ch1_scene2": [ ... ]
 }
 ```
 
 つまり各シーン（ブロック）は`"scenes"`配列の中身ではなく、JSONの**トップレベルにある動的なキー**として1つずつ格納されている。`blocks`はエディタ上の位置情報レジストリ。
 
-【合体の具体的な手順】
-1. 4人分の`ch1.json`〜`ch4.json`をテキストエディタで開く。
-2. ベースとなるファイル（例: `ch1.json`）に、他の3ファイルの**`parameters`と`blocks`以外のトップレベルキー**（`ch2_scene1`, `ch3_oka_scene2`, `ch4_arai_scene1`など、全ブロック）をすべてコピーして追加する。
-3. `blocks`オブジェクトも同様に、他3ファイルの`blocks`の中身（位置情報）をベースファイルの`blocks`にマージする。
-4. `parameters`は1つだけ残せばよい（全員が同じ共有テンプレートを使っているため、キャラクター定義・変数定義は完全に一致しているはず）。
-5. 保存して、合体させたファイルをTuesday JSにインポートし、崩れずに読み込めるか確認する。
-6. 最後にエディタから `game_complete.json` などの名前でエクスポートすれば、1つの大きなゲームファイルが完成する。
+**`background_image`は文字列であること。** `{"src": "...", "size": [...]}`のようなオブジェクトにすると、エンジンはそのまま`url('[object Object]')`という不正なCSSを生成し、画像が一切表示されない（過去に実際に踏んだ不具合）。サイズを指定したい場合は同じシーンの兄弟キー`background_size`（例: `"cover"`）を使う。
+
+【手順】
+1. 4人分の`ch1.json`〜`ch4.json`をそれぞれ更新し、Gitで最新版にする。
+2. `professor-galgame`フォルダで次を実行する。
+
+   ```bash
+   python3 tools/merge_game.py
+   ```
+
+   `ch1.json`の`parameters`をベースに、4ファイル分の全ブロックと`blocks`（エディタ座標）を自動で合体し、`game_complete.json`を生成する。座標はノード同士が重ならないよう自動で調整される（拡大縮小＋衝突検出）。
+3. `game_complete.json`をTuesday JSの「JSON編集」→「JSONプロジェクト」に貼り付け、崩れずに読み込めるか確認する。
 
 **重要:** `parameters.characters`と`parameters.variables`は4人全員のファイルで完全に一致させること。1つでも異なるファイルがあると、そのファイルの`parameters`を採用したときに他の章のキャラクター/変数が欠落する。
 
-## 6. 分岐ロジック（ルート決定・エンディング分岐）の実装方法
+## 6. 公開用HTMLの書き出しとGitHub Pagesでの公開
+
+`game_complete.json`ができたら、ブラウザだけで動く単体HTMLに書き出せる（Tuesday JSエディタ本体の「Build」機能は、ローカルの`data`フォルダへの実アクセス許可が必要で不安定なため使わない）。
+
+```bash
+python3 tools/build_html.py
+```
+
+これで2つのファイルが生成される。
+
+| ファイル | 中身 | 用途 |
+|---|---|---|
+| `index.html`（約15MB） | 画像は`data/`フォルダを相対パス参照 | **配布・公開の基本形。**フォルダごと配布 |
+| `game_standalone.html`（約39MB） | 画像も含めて全部埋め込んだ完全1ファイル版 | ファイル1個だけ渡したいときに使う（生成物のため`.gitignore`済み、リポジトリには含めない） |
+
+いずれもファイルをダブルクリックするだけでブラウザが起動し、インストール・エディタ・ネット接続は不要。エンジン本体（`tools/vendor/tuesday.js`）は同梱済みで、更新したい場合は
+
+```bash
+curl -sL https://raw.githubusercontent.com/Kirilllive/tuesday-js/master/tuesday.js -o tools/vendor/tuesday.js
+```
+
+で最新版に差し替えられる（Apache License 2.0、`tools/vendor/LICENSE_tuesday-js.txt`参照）。
+
+### GitHub Pagesでの公開
+
+このリポジトリはGitHub Pagesで公開済み: **https://koti0829.github.io/PBL2/**
+
+`index.html`をコミット・pushすれば、そのまま公開版に反映される（GitHubの Settings → Pages で `main` ブランチ／`/ (root)` を配信元に設定済み）。反映には数十秒〜数分かかる。
+
+## 7. 分岐ロジック（ルート決定・エンディング分岐）の実装方法
 3年生編の「好感度が最も高い教授のルートに分岐」、4年生編の「エンディング分岐（告白エンド/卒業エンド）」は、Tuesday JSの`js`ノードと`legacy_choice`ノードを組み合わせて実装している。ここは通常のノーコード操作では組めないため、変更する場合は以下の実際の仕様に注意すること（Tuesday JS本体のソースコードで確認済み）。
 
 * **`legacy_choice`ノード:** `[[変数名, 演算子, 比較値, 遷移先ブロック名], ...]`という4要素配列のリストのみが有効。演算子は `">"` / `"<"` / `"="` の3つだけ（`">="`のような複合演算子は無い）。配列を先頭から評価し、条件が一致した最初のエントリの`go_to`に遷移する。**「以外は全部ここへ」という汎用の`else`は無いので**、必ず最後に確実に真になる条件（例: `[["variable", ">", -1000, "fallback"]]`）を入れて全パターンを網羅すること。
